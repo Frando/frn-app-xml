@@ -113,10 +113,10 @@ class GenerateDrupal extends Command
         $time = $this->generateTimeRow($rule, $show);
         $times->appendChild($time);
         if (!empty($show->rerun)) {
-            $rule = $this->parseRruleFromDrupal($show->rerun);
-            $time = $this->generateTimeRow($rule, $show->rerun);
-            $time->setAttribute('rerun', 'true');
-            $times->appendChild($time);
+            $rerunRule = $this->parseRruleFromDrupal($show->rerun);
+            $rerunTime = $this->generateTimeRow($rerunRule, $show->rerun);
+            $rerunTime ->setAttribute('rerun', 'true');
+            $times->appendChild($rerunTime);
         }
         return $times;
     }

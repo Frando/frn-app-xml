@@ -74,9 +74,9 @@ class DrupalAdapter
             ON  n.nid = r.entity_id
             AND r.entity_type = 'node'
             AND r.delta = 0
-            AND r.field_series_target_id = :target
           WHERE n.status = 1
             AND n.type = 'series_rerun'
+            AND r.field_series_target_id = :target
             AND s.field_series_showtime_rrule IS NOT NULL
           LIMIT 1";
 
