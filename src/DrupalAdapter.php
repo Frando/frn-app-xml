@@ -116,7 +116,8 @@ class DrupalAdapter
         chdir($this->path);
         define('DRUPAL_ROOT', $this->path);
         $_SERVER['REMOTE_ADDR'] = '127.0.0.1';
-        $GLOBALS['base_url'] = $this->url;
+        $GLOBALS['base_url'] = $GLOBALS['base_insecure_url'] = 'http://' . $this->url;
+        $GLOBALS['base_secure_url'] = 'https://' . $this->url;
         require_once DRUPAL_ROOT . '/includes/bootstrap.inc';
         drupal_bootstrap(DRUPAL_BOOTSTRAP_FULL);
         chdir($cwd);
