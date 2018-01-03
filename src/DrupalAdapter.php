@@ -105,6 +105,9 @@ class DrupalAdapter
 
             $body = !empty($row->body_summary) ? $row->body_summary : $row->body_value;
             $body = strip_tags($body);
+            $body = str_replace('&nbsp;', ' ', $body);
+            $body = preg_replace('/ +/', ' ', $body);
+            $body = preg_replace('/\[\[.*?\]\]/ms', '', $body);
             $show->body = $body;
 
         }
