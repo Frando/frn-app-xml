@@ -6,11 +6,13 @@ class DrupalAdapter
 {
     protected $path;
     protected $url;
+    protected $urlOpts;
 
     public function __construct($path, $url)
     {
         $this->path = $path;
         $this->url = $url;
+        $this->urlOpts = ['absolute' => TRUE, 'https' => TRUE];
     }
 
     public function getShows($limit = NULL, $offset = 0, $id = NULL)
@@ -25,13 +27,13 @@ class DrupalAdapter
         $this->timezone = date_get_timezone($this->field_info['settings']['tz_handling'], '');
         $this->tz = new \DateTimeZone($this->timezone);
 
-        $q = "SELECT * FROM {node} n 
-          LEFT JOIN {field_data_field_series_showtime} s 
-            ON  n.nid = s.entity_id 
+        $q = "SELECT * FROM {node} n
+          LEFT JOIN {field_data_field_series_showtime} s
+            ON  n.nid = s.entity_id
             AND s.entity_type = 'node'
             AND s.delta = 0
           LEFT JOIN {field_data_body} b
-            ON  n.nid = b.entity_id 
+            ON  n.nid = b.entity_id
             AND s.entity_type = 'node'
             AND s.delta = 0
           WHERE n.status = 1
@@ -63,19 +65,19 @@ class DrupalAdapter
     }
 
     public function getRerun($show) {
-        $q = "SELECT * FROM {node} n 
-          LEFT JOIN {field_data_field_series_showtime} s 
-            ON  n.nid = s.entity_id 
+        $q = "SELECT * FROM {node} n
+          LEFT JOIN {field_data_field_series_showtime} s
+            ON  n.nid = s.entity_id
             AND s.entity_type = 'node'
             AND s.delta = 0
           LEFT JOIN {field_data_field_series} r
-            ON  n.nid = r.entity_id 
+            ON  n.nid = r.entity_id
             AND r.entity_type = 'node'
             AND r.delta = 0
             AND r.field_series_target_id = :target
           WHERE n.status = 1
             AND n.type = 'series_rerun'
-            AND s.field_series_showtime_rrule IS NOT NULL 
+            AND s.field_series_showtime_rrule IS NOT NULL
           LIMIT 1";
 
         $res = db_query($q, array(':target' => $show->originalId));
@@ -98,8 +100,8 @@ class DrupalAdapter
         if (!$rerun) {
             $show->title = $row->title;
             $show->originalId = $row->nid;
-            $show->url = url('node/' . $row->nid, ['absolute' => TRUE]);
-            $show->feed_url = url('node/' . $row->nid . '/feed', ['absolute' => TRUE]);
+            $show->url = url('node/' . $row->nid, $this->urlOpts);
+            $show->feed_url = url('node/' . $row->nid . '/feed', $this->urlOpts);
 
             $body = !empty($row->body_summary) ? $row->body_summary : $row->body_value;
             $body = strip_tags($body);
