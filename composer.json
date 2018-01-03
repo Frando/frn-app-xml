@@ -1,0 +1,19 @@
+{
+    "name": "freieradios/frnapp",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Franz Heinzmann",
+            "email": "frando@unbiskant.org"
+        }
+    ],
+    "require": {
+        "symfony/console": "^3.4",
+        "symfony/var-dumper": "^3.4",
+        "rlanvin/php-rrule": "^1.6",
+        "symfony/dotenv": "^3.4"
+    },
+    "autoload": {
+        "psr-4": { "FRNApp\\": "src/" }
+    }
+}

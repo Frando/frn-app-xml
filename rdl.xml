@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<station lastupdate="2018-01-03T18:29:34+01:00" xmlns:gml="http://www.opengis.net/gml">
+  <info>
+    <displayname>Radio Dreyeckland</displayname>
+    <fullname>Radio Dreyeckland</fullname>
+    <logo src="https://rdl.de/sites/all/themes/zenrdl/logo.png"/>
+    <basecolor>#FF0000</basecolor>
+    <city>Freiburg</city>
+    <studio>
+      <street>Adlerstr.</street>
+      <number>12</number>
+      <city>Freiburg</city>
+      <zip>79098</zip>
+      <studio-location>
+        <gml:Point>
+          <gml:pos>47.993157, 7.840236</gml:pos>
+        </gml:Point>
+      </studio-location>
+      <phone type="studio">+49 761 31028</phone>
+      <phone type="office">+49 761 30407</phone>
+      <email type="studio">aktuell@rdl.de</email>
+      <email type="office">verwaltung@rdl.de</email>
+    </studio>
+  </info>
+  <programme>
+    <broadcast id="1">
+      <title>punkt12</title>
+      <description>Mittagsmagazin mit Veranstaltungshinweisen für das Dreyeckland.&#13;
+Sendezeit: Montag bis Freitag von 12 bis 13 Uhr&#13;
+Fokusiert auf unser Sendegebiet hört ihr Mittags zwischen 12 und 13 Uhr  aktuelle Interviews und Portraits, Beiträge, Nachrichten, Reszensionen, Veranstaltungs- und Programmhinweise aus und für die subkulturellen Scenen  des Dreyecklands.</description>
+      <website>https://rdl.local/sendung/punkt12</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="12:00:00" time-to="13:00:00" day="MO"/>
+          <weekly priority="0" time-from="12:00:00" time-to="13:00:00" day="DI"/>
+          <weekly priority="0" time-from="12:00:00" time-to="13:00:00" day="MI"/>
+          <weekly priority="0" time-from="12:00:00" time-to="13:00:00" day="TH"/>
+          <weekly priority="0" time-from="12:00:00" time-to="13:00:00" day="FR"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="2">
+      <title>Jazz Matinee</title>
+      <description>Sendezeit: jeden Sonntag von 10 - 11 UhrDJ: Michael van GeeIn der Jazz Matinee wird ein "Bild" für die Ohren der gesamten Jazzgeschichte von 1916 bis heute abgebildet. Es gibt keine stilistischen Eingrenzungen, also ist von New Orleans, Swing, Be-Bop, Westcoast, Electric-Jazz bis zum sogenannten Mainstream alles zu hören.</description>
+      <website>https://rdl.local/sendung/jazz-matinee</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="10:00:00" time-to="11:00:00" day="SO"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="3">
+      <title>Musikmagazin</title>
+      <description>Montag bis Freitag immer um 17 Uhr aktuelles Konzertgeschehen, Interviews und Neuheiten. Dazu genre-übergreifend Musik.Moderiert wird das Musikmagazin von unterschiedlichen MusikredakteurInnen.</description>
+      <website>https://rdl.local/sendung/musikmagazin</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="17:00:00" time-to="18:00:00" day="MO"/>
+          <weekly priority="0" time-from="17:00:00" time-to="18:00:00" day="DI"/>
+          <weekly priority="0" time-from="17:00:00" time-to="18:00:00" day="MI"/>
+          <weekly priority="0" time-from="17:00:00" time-to="18:00:00" day="TH"/>
+          <weekly priority="0" time-from="17:00:00" time-to="18:00:00" day="FR"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="4">
+      <title>Frantic Freakshow</title>
+      <description>Sendezeit: jeden zweiten Freitag von 21 - 22.30 UhrDJ: Götz AdlerAuf der Suche nach dem perfekten Sound, dem ultimativen Beat, dem unwiderstehlichen Song, dem innovativen Moment in der Musik, der das Leben zu einem besseren macht. Die Frantic Freakshow bewegt sich gerne entlang Schwellen und zwischen Schnittstellen elektronischer und analoger Musik.Die Koordinaten: Indie und Electronica, Postrock und Dub, Psychedelicpop und Folk, auch Downbeat oder Shoegazer. Der musikalische Blumenstrauss ist bunt und duftet nach mehr als einer Wiese. Die Frantic Freakshow ist in erster Linie ein musikalisches Neuheitenmagazin, am besten vergleichbar mit dem Plattentestteil in einem gedruckten Musikmagazin, nur hörbar gemacht und mit Moderation versehen.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Über die Jahre haben sich die musikalischen Schwerpunkte immer wieder verschoben, die Frantic Freakshow war schon immer eine Radiosendung im Spiegel der Zeit, eine Art State of the Art-Fenster, ein Vehikel, um eingefahrenem Schubladendenken zu entfliehen, im Namen des Track, im Namen des Pop, Amen.Die Frantic Freakshow ist eine der ältesten Musiksendungen (wenn auch bei weitem nicht die älteste) im Sendeprogramm von Radio Dreyeckland, sie läuft seit 1992 regelmäßig Freitag abends. Anfänglich widmete sich Götz Adler damals neben dem grassierenden&nbsp; Grunge verschiedenen Spielarten des Indierock. Mitte der 90er tendierte die Show mehr und mehr in Richtung Electronica, Drum &amp; Bass und auch Hiphop, der Anteil analoger Gitarrenmusik in der Sendung hat seit 2000 wieder deutlich zugenommen. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Ein kleiner Lieblingslabelkatalog sagt manchmal mehr als 1000 Worte über die Musik in der Frantic Freakshow:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Ninja Tune, Warp, Morr, City Slang, Domino, Matador, Chemikal Underground, Plug Research, K7!, Tomlab, Wichita, XL, Mute, Beggars, 4AD, Glitterhouse, Thrill Jockey, Drag City, Jagjaguwar, DFA, Kompakt, Secretly Canadian, XL, Too Pure, Sub Pop, Ghostly International, Anticon, Fatcat, Staatsakt, Sinnbus...Verantwortlich &amp; Moderation: Götz Adler</description>
+      <website>https://rdl.local/sendung/frantic-freakshow</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="21:00:00" time-to="22:30:00" weekFrequency="2" date-from="2013-09-20T21:00:00+02:00" day="FR"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="5">
+      <title>Meet The Beat</title>
+      <description>Pop-Archäologische Exkursionen durch 50 Jahre Rock-Geschichte.Sendezeit: jeden Samstag von 20 - 21 UhrDJ: Michael Jung(siehe auch: Permanent Waves/Grooves)MTB 1965Meet The Beat feierte 2013 ein rundes Jubiläum: Mit einem Rückblick auf das Beat-Jahr 1963 begann die Serie im Herbst 1988. 25 Jahre Beat - und es geht weiter: Immer am letzten Samstag im Monat gibt es einen unterhaltsamen Blick die Hits und Ereignisse vor genau 50 Jahren. Willkommen im Jahr 1965!Aktuelle Reihe (Seit August 2014):Meet The Disco Beat – im Herbst ’74 erschienen in den USA die ersten Hitlisten, die auf DJ-Einsätzen in angesagten New Yorker Clubs und Schallplattenverkäufen in spezialisierten Record Shops basierten und so den Beginn der Disco-Ära dokumentierten. 40 Jahre später gibt es bei Meet The Beat einen ausführlichen Rückblick auf 10 spannende Jahre, die nicht nur die Musikgeschichte veränderten. The Weekend Starts Here!Von März 2013-August 2014MEET THE SWEDESReihe zur Geschichte der schwedischen und skandinavischen Pop-Musik 1963 – 1983Von Juli 2012-März 2013MTB - THE CAPITOL SHOW MEET THE BEATblickt zurück auf 70 ereignisreiche Jahre: Am 1. Juli 1942 erschienen die ersten Platten des neu gegründeten CAPITOL Labels, das mit neuen Produktions- und Vertriebsmethoden schnell zu ei-ner der innovativsten und einflußreichsten Plattenfirmen aller Zeiten werden sollte und dabei nicht nur Mu-sikgeschichte schrieb – von den frühen Schellack-Erfolgen von Nat King Cole und Frank Sintara über die US-Veröffentlichungen der Beatles bis hin zu den Hits der Beastie Boys oder Katy Perry im digitalen Zeitalter.Von März 2012-Juli 2012SURFIN ' SAFARI - 50 JAHRE 'BEACH BOYS'Ein Rückblick auf die frühen Jahre der Band und die kalifornische Surf- und Hot-Rod-Szene in den Jahren 1961 – 1965. (10 Folgen)Von Oktober 2010 bis März 2012DIE GESCHICHTE DER POP- UND ROCKMUSIK IN DER DDRNach 57 Folgen wird Ende März die erste umfassende Serie über die dortige Entwicklung der Pop- und Rockmusik der DDR enden. Am symbolträchtigen 2. Oktober 2010 startete Michael Jung diese einmalige Reihe und präsentierte seitdem regelmäßig die wichtigsten Platten, hörenswerte Raritäten und ausgewählte O-Tönen aus 40 Jahren Politik und Kultur. Wir wünschen noch einmal viel Spaß mit den letzten vier Folgen.&nbsp;</description>
+      <website>https://rdl.local/sendung/meet-beat</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="20:00:00" time-to="21:00:00" day="SA"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="6">
+      <title>Fokus Südwest</title>
+      <description>Landespolitik Baden-Württemberg</description>
+      <website>https://rdl.local/sendung/fokus-s-dwest</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="18:00:00" time-to="18:30:00" day="TH"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="7">
+      <title>35 Millimeter</title>
+      <description>Jeden 1. Mittwoch um 20 Uhr. (Wdh. Donnerstag 13 Uhr)Seit Januar 2006 gibt es eine aktuelle Filmsendung bei RDL: 35 Millimeter. Die Themenpalette reicht von aktuellen Besprechungen über filmhistorische Beiträge bis zu Rezensionen von Filmbüchern.Fester Bestandteil jeder Sendung ist das 'filmische Quartett', eine Gesprächsrunde in der ein frisch angelaufener Film besprochen wird. Auch Festivalberichte sind ein fester Bestandteil, etwa von der Berlinale, aus Cannes oder Locarno.Am 2. April 2014 wird die 100. Sendung ausgestrahlt!!Redaktion: Katharina Hetze, Martin Koch, Angelique Presse,&nbsp; Alexander Sancho-Rauschel, Andreas Reimann, Johannes Litschel, Sebastian PetznickKontakt: film(ät)rdl.de</description>
+      <website>https://rdl.local/sendung/35-millimeter</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="20:00:00" time-to="21:00:00" day="MI" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="8">
+      <title>Onda-Info</title>
+      <description>Sendezeit: Alle 2 Wochen am Donnerstag von 18.30 - 19 Uhr (im Wechsel mit focus international). onda, das sind Reportagen, Magazinsendungen und Features über alles, was die lateinamerikanische Welt bewegt: indigene Rechte und Frauenmorde in Mexiko ebenso wie queerer Cumbia aus Argentinien oder Ökotourismus in Costa Rica.Dabei arbeitet onda eng mit lateinamerikanischen Korrespondent_innen und nichtkommerziellen Radionetzwerken aus dem gesamten Subkontinent zusammen.Alte Radiohasen, Lateinamerika-Heimkehrer_innen, Erwerbslose und Nachwuchsjournalist_innen: es ist diese Mischung, die dafür sorgt, dass das Programm genau so bunt und hintergründig ist wie die Autor_innen selbst.Radio Dreyeckland sendet das das alle zwei Wochen erscheinende onda-info zusammen mit etwa 40 Freien Radios im deutschsprachigen Raum. Zudem liefert onda viele Hintergrundbeiträge, die – so wie das onda-info – aus dem Internet geladen werden können – kostenfrei, versteht sich!http://www.npla.de/de/onda/onda-info</description>
+      <website>https://rdl.local/sendung/onda-info</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="18:30:00" time-to="19:00:00" weekFrequency="2" date-from="2014-07-02T18:30:00+02:00" day="TH"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="9">
+      <title>Arbeitsweltradio</title>
+      <description>Jeden Mittwoch zwischen 19 und 20 UhrWiederholung jeden Donnerstag von 11-12 UhrDas Arbeitsweltradio besteht seit April 1991 und wurde zeitweise von der Hans-Böckler-Stiftung, vom DGB und Einzelgewerkschaften unterstützt. Es sollte erforscht werden, wie Probleme in der Arbeitswelt besser in der Öffentlichkeit dargestellt werden können. Zu Beginn waren die meisten RedakteurInnen in verschiedenen Gewerkschaften engagiert, es waren aber auch nicht organisierte KollegInnen dabei. Dies ist auch heute noch so. Im Redaktionsteam besteht ein breites Spektrum politischer Verortung, welches sich in den Sendungen wiederspiegelt. Einigkeit besteht jedoch darin, dass unsere Art „auf Sendung zu gehen“ vor allem denjenigen Gehör verschaffen soll, die dazu in öffentlich-rechtlichen Sendern keine Gelegenheit haben: Also im positiven Sinn mit und für sie eine Gegenöffentlichkeit zu schaffen.Unsere Themen sind vielfältig: z.B Betriebsschließungen, Streikaktionen, Ökologie oder Mobbing am Arbeitsplatz sowie Bildungspolitik, Gesundheitswesen, Themen aus Wissenschaft und Forschung.Einen neuen Schwerpunkt haben wir durch unser „Erwerbslosenradio“ – jeweils am 1. und 3. Mittwoch des Monats - geschaffen. Wir geben dort Rechtstipps und klären über die Verschärfungen in der Sozialpolitik auf. Genauso wichtig sind Informationen zu Kampagnen aus dem Widerstand und zur Interessenvertretung von Erwerbslosen sowie zum konkreten Umgang mit der Arbeitsverwaltung.Spannende Live-Debatten über politische Themen aus dem In- und Ausland gehören bei uns mit dazu und natürlich viel Musik, wobei die RedakteurInnen gerne ihre „Lieblingsscheiben“ (z.B. aus der 68er Bewegung und Hippiezeit) auflegen.Wir wünschen uns sehr Zuwachs vor allem aus der jüngeren Generation. Dann könnten wir z.B. aus dem Bereich von Bildung und Ausbildung mit mehr praktischer Erfahrung berichten.Radio-machen selbst bildet natürlich auch: Recherchieren, Berichte verfassen, Technik lernen …Wer bei uns mitmachen oder uns mit Informationen unterstützen möchte: Einfach eine email schicken: awr@rdl.de und eure Mailadresse und Telefon- Nummer hinterlassen. Ihr bekommt dann eine Einladung zum nächsten Treffen der Redaktion.</description>
+      <website>https://rdl.local/sendung/arbeitsweltradio</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="19:00:00" time-to="20:00:00" day="MI"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="10">
+      <title>La Radio</title>
+      <description>&nbsp;LaRadio ist das autonome FrauenLesbenRadio auf der Frequenz von Radio Dreyeckland. Wir interessieren uns für ganz unterschiedliche Themen, wichtig ist uns dabei eine feministische Perspektive und das Sichtbar- bzw. Hörbarmachen von Frauen und ihren Positionen.Wir freuen uns immer über FrauenLesbenTrans, die Lust haben, bei uns einzusteigen! Kontakt nehmt ihr am besten auf einem der folgenden Wege auf:Email: frauen(ät)rdl.deTelefon: 0761-31028 während der SendungPostadresse: LaRadio, c/o Radio Dreyeckland, Adlerstr. 12, 79098 Freiburg</description>
+      <website>https://rdl.local/sendung/la-radio</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="20:00:00" time-to="22:00:00" day="DI"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="11">
+      <title>Cuba-Gruppe</title>
+      <description>Sendezeit: Immer am 2. Dienstag im Monat 19-20 Uhr (Wiederholung am Mittwoch 11-12 Uhr)Nachrichten und Musik aus Cuba und Lateinamerika.Hierzulande ist wenig zu sehen und zu lesen über aktuelle Entwicklungen auf Cuba. Und wenn, dann häufig politisch eingefärbt. Die Cuba-Gruppe Freiburg bemüht sich, die HörerInnen auf dem Laufenden zu halten, und zwar mit Berichten, die direkt aus Cuba und Lateinamerika kommen.&nbsp;</description>
+      <website>https://rdl.local/sendung/cuba-gruppe</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="19:00:00" time-to="19:00:00" day="DI" week1="false" week2="true" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="12">
+      <title>Freistunde FM - Jugendradio</title>
+      <description>Sendezeit: Jeden Sonntag von 17-18 Uhr (Wiederholung Montag 13-14 Uhr)Jung, motiviert und voller toller Ideen.Wir sind die Jugendredaktion von Radio Dreyeckland. Eine bunte Mischung aus Jugendlichen zwischen 14 und 23 Jahren, einem Mikrofon und den verschiedensten Musikgeschmäcker garantieren Abwechslung und jede Menge Spaß.Wir gehen mit offenen Ohren und Augen durch die Stadt, um euch immer neue Facetten von Freiburg zu zeigen, die euch bis dahin vielleicht entgangen sind. Also, schaltet ein, immer sonntags um 17 Uhr.Unsere Redaktion ist für alle offen, die Lust auf Radio haben. Egal, auf welche Schule du gehst, wie du aussiehst oder wie gut du deutsch kannst.Wir haben auch ein eigenes Projekt, das extra dafür da ist, dass nicht-deutsche Jugendliche die gleichen Chancen haben, Radio zu machen wie alle anderen. Es heißt "Transmission: Jugend - Macht - Radio" und ist von der Integrationsoffensive Baden-Württemberg finanziert.Wir freuen uns auf euch!eure Jugendredaktion.&nbsp;Bericht der Badischen Zeitung vom 11.3.2011 zu Freistunde FM&nbsp;</description>
+      <website>https://rdl.local/sendung/freistunde-fm-jugendradio</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="17:00:00" time-to="18:00:00" day="SO"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="13">
+      <title>Philosophisches Experiment</title>
+      <description>Sendezeit: Jeden vierten Freitag des Monats, 19-20 Uhr (Wdh.: Dienstag, 14-15 uhr)Mit Zlatko ValenticDie Geschichte der Philosophie ist gekennzeichnet durch ein großes Durcheinander von Fragen und Problemen. Fragen, die sich jeder Mensch in irgendeiner Weise schon gestellt hat. Probleme, welche die Menschen seit es sie gibt beschäftigen. Das ist das faszinierende an der Philosophie, sie ist immer aktuell und dies macht sie rätselhaft. Das Philosophische EXPERIMENT versucht diese Fragen und Probleme für unsere Aktualität aufzugreifen. Aber wie?Oft wird der Philosophie der Vorwurf gemacht, sie sei zu abstrakt und habe wenig mit dem Leben zu tun. Die Sendung will diesem Vorwurf nachgehen und die Probleme hinter dem Vorhang der Abstraktion entbergen. Denn, hinter jeder Philosophie steckt ein Problem. Gleichwohl sind die Probleme nicht sofort ersichtlich und man gerät leicht in Verzweiflung bei der Suche danach. Doch wenn die Probleme erst einmal entdeckt sind, sieht man die Welt aus einem neuen Licht. Dann wird die Philosophie ganz konkret. Wenn das Problem versteckt bleibt, bleibt auch die Philosophie abstrakt.Das Philosophische EXPERIMENT begibt sich auf die Suche nach dem Problem. Dies geschieht jeweils mit einem Gast, der in gewisser Weise, Experte/in auf dem Gebiet dieser Philosophie ist. In einem Dialog zwischen meinen Gästen und mir, Zlatko Valenti, werden wir uns dann auf die Spur nach den großen Gedanken und Problemen begeben. Dieser Dialog soll sich jedoch nicht nur auf die Sendung beschränken, sondern besonders dazu anregen, auch nach der Sendung über die Konkretheit der behandelten Gedanken im aktuellen Leben zu diskutieren. Zuerst aber, machen wir uns gemeinsam auf die Suche...&nbsp;</description>
+      <website>https://rdl.local/sendung/philosophisches-experiment</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="19:00:00" time-to="19:00:00" day="FR" week1="false" week2="false" week3="false" week4="true" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="14">
+      <title>Knastfunk</title>
+      <description>Ein Magazin aus dem Reich des Bösen: Über Justiz, Gefängnisse, Verbrechen und VerbrecherImmer sonntags um 21 Uhr (Wiederholung montags um 11 Uhr)</description>
+      <website>https://rdl.local/sendung/knastfunk</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="21:00:00" time-to="22:00:00" day="SO"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="15">
+      <title>Black Channel</title>
+      <description>Sendezeit: Jeden zweiten Donnerstag von 21 - 22 UhrDJ: TobiasBlack Channel beinhaltet Schattierungen experimenteller und elektronischer Musik von düster über rhythmisch bis atmosphärisch + meditativ. Die Auswahl der Titel erfolgt nicht nur nach dem Aspekt des nichtkommerziellen Charakters, sondern auch der Prüfung des inhaltlichen Anspruchs, der spürbar ist und wirkt. U.a. (in Schubladen) gibt es mehr über die Welt des Electro, Experimental, Industrial, Ritual, Dark Techno, Synthie, EBM, Gothic und Avangarde!Im Prinzip ist Black Channel eine Spartensendung mit Scene-Musik und Hintergrundinformationen. Dies widerspricht aber nicht der Tatsache, dass auch "unerfahrene" und Nicht-Scene-Freaks durch die grosse Vielfalt immer etwas Ansprechendes finden. Die Hintergrundinformationen werden in Form von Rezensionen, Features, Konzerthinweisen + Scenetips sowie Interviews präsentiert.Sehr häufig spielen wir Musik von Bands, die noch keinen Plattenvertrag haben und in Eigenregie eine geringe Zahl an Tonträger selbst vertreiben. Diese Bands und deren Musik sind oft ein wahres Kleinod, was auch durchaus der Charakter von Black Channel ist.BLACK CHANNEL ist übrigens aus der Radio-Show "Shocking Youth" hervorgegangen, die Ende der 80er bis Mitte der 90er auf RDL zu hören war. Als "Black Channel" ist die Sendung dann ab Mai 1995 auf dem Querfunk Karlsruhe und ab April 1998 auf dem Freien Radio Für Stuttgart (bis Juni 2001) gelaufen.Playlists, Real Audio Streams der Sendungen ab 1998 und weitere andere Infos hier:www.blackchannel.orginfo@blackchannel.org</description>
+      <website>https://rdl.local/sendung/black-channel</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="21:00:00" time-to="22:00:00" weekFrequency="2" date-from="2013-09-19T21:00:00+02:00" day="TH"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="16">
+      <title>Incubus Succubus</title>
+      <description>Jeden Mittwoch um 22 UhrNeu ab November 2015: Alle 2 Wochen eine halbe Stunde länger bis 23:30 Uhr!</description>
+      <website>https://rdl.local/sendung/incubus-succubus</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="22:00:00" time-to="23:00:00" weekFrequency="2" date-from="2013-09-04T22:00:00+02:00" day="MI"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="17">
+      <title>Lost Society</title>
+      <description>Sendezeit: Alle 2 Wochen donnerstags von 21 - 22 UhrDJ: Lady EvilDIE BESTE ROCKSENDUNG DER WELT!!!Rock, Hardrock, Power- und Heavy Metal.</description>
+      <website>https://rdl.local/sendung/lost-society</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="21:00:00" time-to="22:00:00" weekFrequency="2" date-from="2013-10-10T21:00:00+02:00" day="TH"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="18">
+      <title>Metal-Demenz-Aeon</title>
+      <description>Sendezeit: jeden zweiten Mittwoch von 23 - open endund am 4. Sonntag im Monat von 22-23 Uhr&nbsp;DJ's: Al d'Berzerk, Ozzi, Niki, Hubert &amp; SturmMetal und Artverwandtes in allen Facetten !Metal ist eine Musikrichtung, die nicht mehr nur heavy ist,sondern vielmehr ein riesiges Spektrum an facettenreichen Klängen bietet.Es ist daher das Anliegen von METAL-DEMENZ-AEON,den kompletten Bereich des Heavy Metal mitsamt den Grenzgebieten (Metal in Verbindung mit z.B. Folk, Jazz etc.) abzudecken bzw. den HörerInnen zugänglich zu machen. D.h. wir senden von z.B. RAMMSTEIN über RUNNING WILD bis hin zu DEAD INFECTION so ziemlich alles, was in irgendeiner Form mit Heavy Metal zu tun hat. Der Inhalt umfasst weiterhin: Neuvorstellungen, Verlosungen, Band-Specials, Interviews, Demos von Underground-Bands, Verriss-Ecken etc.Playlists, Links und mehr: www.metaldemenzaeon.de</description>
+      <website>https://rdl.local/sendung/metal-demenz-aeon</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="23:00:00" time-to="01:00:00" weekFrequency="2" date-from="2013-10-02T23:00:00+02:00" day="MI"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="19">
+      <title>Radio - Waves</title>
+      <description>Sendezeit: jeden Mittwoch von 21 - 22 UhrDJ: MelanieDie Sendung für Vampire, Hexen, Fledermäuse und andere Nachtgestalten.Düstere Klänge aus den Bereichen Gothic-Rock, Wave, EBM, Batcave, Neofolk, Medieval, Industrial und Gothic-Metal umschmeicheln das Ohr. Neben musikalischen Klassikern, Neuheiten und Veranstaltungstipps erwarten Euch auch zahlreiche "Specials" rund um die schwarze Szene.</description>
+      <website>https://rdl.local/sendung/radio-waves</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="21:00:00" time-to="22:00:00" day="MI"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="20">
+      <title> * Solid Pleasure *</title>
+      <description>Seit über 25 Jahren senden wir alle zwei Wochen Freitag abends für gut 2 Stunden:Einen (musik-) bewusstseinserweiternden Mix aus allem was uns gerade gefällt – viel elektronische Musik, gerne Gitarren und Dancegrooves, Obskures, zu Unrecht Vergessenes, Klassiker und Brandneues – alle Arten von *psychedelicatessen* halt.Von Amon Tobin über Kraftwerk und Madonna bis hin zu den Melvins und Frank Zappa ist alles möglich...Und nach der Sendung kannst du (meistens...) die komplette Playlist auf der Solid Pleasure Homepage nachlesen unter:www.solidpleasure.deEbenfalls dort zu finden: eine Seite mit unseren derzeitigen Lieblingstracks, -alben und -links.Und ab und zu auch Vorankündigungen für die nächste Sendung.* SONIC TREASURES &gt; SONIC PLEASURES *[[{"fid":"13690","view_mode":"full","fields":{"format":"full","field_file_image_alt_text[und][0][value]":"Solid Pleasure","field_file_image_title_text[und][0][value]":"","field_file_image_source[und][0][value]":"RDL - Solid Pleasure","field_file_license[und]":"cc_sa_nc"},"type":"media","attributes":{"title":" | Lizenz: CC Attribution, Non-Commercial, Share Alike","class":"colorbox media-element file-full"}}]]Unsere Favoriten 2015:* Die besten Alben 2015 *&nbsp;* A BAND OF CRICKETS - Inter Larvas (Behind The Black Curtain)&nbsp;* FFS - FFS (Domino)&nbsp;* HOX - Duke Of York (Editions Mego)&nbsp;* ALGIERS - s.t. (Matador)&nbsp;* FAITH NO MORE - Sol Invictus (Reclamation)&nbsp;* WIRE - Wire (Pinkflag)&nbsp;* HALMA - Granular (Kapitän Platte)&nbsp;* MARTIN GORE - MG (Mute)&nbsp;* DEN SORTE SKOLE - Indians &amp; Cowboys (densorteskole.net)&nbsp;* KING CRIMSON - Live At The Orpheum (DGM)&nbsp;&nbsp;&nbsp;&nbsp;* Die besten Songs 2015 *&nbsp;* THE FAT WHITE FAMILY - I Am Mark E Smith (Without Consent)&nbsp;* KID WAVE - Baby Tiger (Heavenly)&nbsp;* NOVA HEART - Drive To Our End (Staatsakt)&nbsp;* MOTÖRHEAD - Choking On Your Screams (UDR)&nbsp;* SUNN O))) &amp; BORIS &amp; IGGY POP - Swamp (BBC 6 Music)&nbsp;* JOSEFIN ÖHRN + THE LIBERATION - Horse Dance (Rocket)&nbsp;* FFS - Collaborations Don't Work (Domino)&nbsp;* MUELLER_ROEDELIUS - About Tape (Grönland)&nbsp;* DAVID BOWIE - Blackstar (ISO)&nbsp;* ASIAN DUB FOUNDATION - Get Lost Bashar (Believe Digital)&nbsp;* THE NOTWIST - Object 4 (Alien Transistor)&nbsp;&nbsp;&nbsp;&nbsp;* Die besten Konzerte 2015 *&nbsp;* BAR 2015-02-19 Freiburg, Slow Club&nbsp;* DARK HORSES 2015-03-31 Hamburg, Molotow Bar&nbsp;* PATTI SMITH 2015-07-12 Lörrach, Burghof&nbsp;* IGGY POP 2015-08-13 Colmar, Theatre Au Plein Air&nbsp;* THE NOTWIST 2015-08-14 Basel, Open Air&nbsp;* MELVINS 2015-09-21 Köln, Underground&nbsp;* KING CRIMSON 2015-09-24 Utrecht, Tivoli Vredenburg&nbsp;* WIRE 2015-11-20 Köln, Gebäude 9[[{"fid":"14286","view_mode":"full","fields":{"format":"full","field_file_image_alt_text[und][0][value]":"Applaus !","field_file_image_title_text[und][0][value]":"","field_file_image_source[und][0][value]":"","field_file_license[und]":"none"},"type":"media","attributes":{"title":" | Lizenz: Keine (all rights reserved)","class":"colorbox media-element file-full"}}]]</description>
+      <website>https://rdl.local/sendung/solid-pleasure</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="22:30:00" time-to="00:30:00" weekFrequency="2" date-from="2013-10-04T22:30:00+02:00" day="FR"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="21">
+      <title>Slavonic Dances</title>
+      <description>Sendezeit: Montags 15 Uhr</description>
+      <website>https://rdl.local/sendung/slavonic-dances</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="15:00:00" time-to="16:00:00" day="MO"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="22">
+      <title>Greenpeace Radio Freiburg</title>
+      <description>Sendezeit: Alle 4 Wochen montags um 19 Uhr(Wiederholung: Dienstag 11 Uhr)</description>
+      <website>https://rdl.local/sendung/greenpeace-radio-freiburg</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="19:00:00" time-to="19:00:00" weekFrequency="4" date-from="2013-09-23T19:00:00+02:00" day="MO"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="23">
+      <title>Boa Tarde Portugal</title>
+      <description>Sendezeit: Jeden Samstag von 14 bis 15 Uhr&#13;
+Die Radiosendung Boa Tarde Portugal ist eine Sendung in portugiesischer Sprache, für die portugiesische Bevölkerung der Region Südbaden. Diese Sendung gibt es schon seit dem 15. Dezember 1990, immer samstags von 14.00 bis 15.00 Uhr. Überwiegend besteht die Sendung aus traditioneller und vergessener Musik, es werden auch Lokalinformationen und Informationen aus Portugal weitergegeben.</description>
+      <website>https://rdl.local/sendung/boa-tarde-portugal</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="14:00:00" time-to="15:00:00" day="SA"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="24">
+      <title>Back To The Garage</title>
+      <description>&nbsp;Sendezeit: Jeden Samstag von 11-12 Uhr</description>
+      <website>https://rdl.local/sendung/back-garage</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="11:00:00" time-to="12:00:00" day="SA"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="25">
+      <title>Babylon Calling</title>
+      <description>Sendezeit: jeden Montag von 21 - 22.30 UhrDJs: Wolf, Thomas, Werner und JürgenSchnallt das Radio an! Babylon Calling bläst die fettesten Bässe durch den Äther. Hier brummt die wahre "Bass Culture": Reggae, Dance Hall, Dub, Ska, Rocksteady - und alles andere aus dem Dunstkreis der jamaikanischen Musik. Das Moderatoren-Team von Babylon Calling featured verschiedene Artists, Producers, Stilrichtungen und Epochen, lässt die Künstler selbst zu Wort kommen, stellt die neusten Sounds und Trends vor, informiert über Konzerte und Parties und bespricht aktuelle Releases. Der volle Reggae-Rundschlag mit extrem hohem Suchtpotential.Tune in, brethren and sistren!</description>
+      <website>https://rdl.local/sendung/babylon-calling</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="21:00:00" time-to="22:30:00" day="MO"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="26">
+      <title>Bebe Y Lucha</title>
+      <description>Sendezeit: Jeden 2. Sonntag (ungerade Kalenderwoche) 20 - 21 Uhr (Wiederholung: Montags 14-15 Uhr)Die gelungene Alternative zum "Tatort" im Fernsehen: BEBE Y LUCHA!Seit Januar 2001 bekämpfen wir unerbittlich - unermüdlich öde Sonntagabende, indem wir den Äther mit einer geballten Ladung Punk in all seinen Spielarten und Subgenres erzittern lassen.Aktuell (Oktober 2008) an den Reglern: Ralph,Olli und Martin.</description>
+      <website>https://rdl.local/sendung/bebe-y-lucha</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="20:00:00" time-to="21:00:00" weekFrequency="2" date-from="2013-09-08T20:00:00+02:00" day="SO"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="27">
+      <title>Bei Tschernobill</title>
+      <description>Sendezeit: Jeden 1., 3. und 5. Dienstag des Monats (immer nach dem Magical Mystery Mix) von 23-1 UhrDJ: Tschernobill&nbsp;</description>
+      <website>https://rdl.local/sendung/bei-tschernobill</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="23:00:00" time-to="01:00:00" day="DI" week1="true" week2="false" week3="true" week4="false" week5="true"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="28">
+      <title>Bittersweet</title>
+      <description>Tune In to BittersweetThe Friday Night ExperienceJeden zweiten Freitag von 21:00 bis 22:30 UhrWer Lust hat auf vielfältige und abwechslungsreiche Musik aus aller Damen und Herren Länder, wer Spaß hat an witzigen Kommentaren, wer das Wochenende mit gediegenem Flow einleiten will, der ist bei bitter und sweet bestens aufgehoben. Hier gibts von DJ Bittersweet ordentlich was auf die Musikmütze - vom Granatenrock bis zum Indiemonster, vom Gangsta-Rappa zum Ragga-Muffin, vom Kuss des Pianos zur einfachen Bescheidenheit des Pop.Das Beste ist: Macht mit! Wer an bittersweet@rdl.de eine Mail ins Studio schickt, kann das Abendprogramm interaktiv mitgestalten. Schickt eure Tracks als mp3, einen Link auf euren Libelingssong oder eure monströsen Meinungen ins offene Sprachrohr der Bittersweet-Redaktion. Mails werden 24 Stunden/7 Tage die Woche für Euch bearbeitet. Also: Seid live dabei.</description>
+      <website>https://rdl.local/sendung/bittersweet</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="21:00:00" time-to="22:30:00" weekFrequency="2" date-from="2013-09-13T21:00:00+02:00" day="FR"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="29">
+      <title>Dub Kali Rootz</title>
+      <description>Montags alle 14 Tage von 22:30 Uhr bis 0:00 Uhr&nbsp;Dub Kali Rootz is a flight into Freiburg's midnight sky across the universe of Dub and Conscious Roots. Timeless Dub, Spoken Dub, History of Dub Music, and Interviews...DJ DUB'KALI , hailing from Kingston, Jamaica. Original female Dub DJ / Dub Poetess this side of the Atlantic...vibzing out of Freiburg, Germany. Monday every 2 weeks on Radio Dreyeckland (Germany's first free radio station) DUBWISE in all possible directions and Heartically Roots...</description>
+      <website>https://rdl.local/sendung/dub-kali-rootz</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="22:30:00" time-to="00:00:00" weekFrequency="2" date-from="2013-10-07T22:30:00+02:00" day="MO"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="30">
+      <title>Jazz News</title>
+      <description>Sendezeit: jeden Samstag von 10 - 11 UhrDJ: Heinz Dillmann, Hardy Vollmer, Klaus WallmeierJazz News ist das Forum für neue Platten, CDs und andere Medien, die im weitesten Sinne zumindest Anklänge an Jazz haben: nicht nur Mainstream Lines sind angesagt, sondern auch Oldtime, Swing, Blues, Avantgarde, Kammermusik, usw. Außerdem gibt's in den News Veranstaltungshinweise zu Konzerten und anderen kulturellen Events aus der Regio NW-Schweiz / Oberrhein-Schwarzwald-Bodensee / Elsaß.Musiksendungen von Radio Dreyeckland gelten in der Regio-Szene als kompetent und auf der Höhe der musikalischen Trends. Wir bieten unseren Jazz-Hörern deshalb ab und an auch Splashes in Sachen Acid-Jazz, Drum'n'Bass, Worldmusic und Latin/Brasil/Cuban an.Email: jazznews@rdl.de</description>
+      <website>https://rdl.local/sendung/jazz-news</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="10:00:00" time-to="11:00:00" day="SA"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="31">
+      <title>Keine Heimat (Euro Folk)</title>
+      <description>Sendezeit: jeden Dienstag von 15 - 16 UhrDJ: Christian Rath"Keine Heimat" ist das RDL-Programm für europäische Folkmusik. Es wird seit 1998 wöchentlich auf diesem Sendeplatz ausgestrahlt. Jeden Dienstag gibt es einen Schwerpunkt, meist mit neuen CDs aus einem bestimmten Land, einer bestimmten Region oder einem Bandportrait. Am jeweils ersten Dienstag im Monat könnt Ihr oft bretonische Musik hören. Unter dem Titel "Zweite Heimat" gibt es außerdem jeden Freitag von 15 bis 16 Uhr eine Extra-Ausgabe ohne inhaltlichen Schwerpunkt.Warum "Keine Heimat"?Folkmusik hatte in ihrer Hochzeit in den 70er-Jahren viel mit der Suche "nach den Wurzeln" und der "Identität" zu tun, aber auch mit Zivilisationskritik und der Suche nach alternativen Lebensweisen. Das ist weitgehend vorbei. Folk ist heute nicht mehr Bewegungsmusik, sondern ein relativ normaler Bestandteil des Musikbusiness - einer von vielen. Dies hat zwar die gesellschaftliche Bedeutung von Folk-Musik verringert, ihr aber zugleich einst ungeahnte Möglichkeiten eröffnet.Folk mischt sich schon lange mit Jazz, Metal, Elektronik und vielem mehr. Folk bringt dabei in andere Musikstile regionale Färbungen ein, lässt aber auch traditionelle Musik im Licht neuer musikalischer Entwicklungen anders klingen. Musikalische Traditionen sind also Teil kultureller Innovationen. "Keine Heimat" hilft wöchentlich, den Überblick zu behalten.Ankündigungen, Playlists und weitere Informationen gibt es auf der Webseite: www.keine-heimat.de</description>
+      <website>https://rdl.local/sendung/keine-heimat-euro-folk</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="15:00:00" time-to="16:00:00" day="DI"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="32">
+      <title>Kom Karussell</title>
+      <description>Sendezeit: Seit 1. Februar 2008 alle vier Wochen Freitags um 20 UhrEin Musik-Sound-Text-Gemisch:Kinder, die Hoppe spielen. Klappern aus der Küche. Alte GONG-Uhr.Plastesteine aufeinander. VollerAbendbrottisch (Durcheinandermenschen).Regen, der auf das Dachfenster meines Zimmersprasselt. Bahn, nächste Haltestelle: "...!".-Von Elektronisch über Akustik bis Experimentell.Altneues, Ruhiglautes zum Hören und Hinhören. Per Tragetasche von Ortzu Ort, per Klang von Bild zu Bildern.Zweisprachig: deutsch - dänisch / tysk - dansk&nbsp;</description>
+      <website>https://rdl.local/sendung/kom-karussell-0</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="20:00:00" time-to="21:00:00" weekFrequency="4" date-from="2013-10-04T20:00:00+02:00" day="FR"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="33">
+      <title>Laut und Deutlich</title>
+      <description>Sendezeit: jeden zweiten Donnerstag von 22 - 23.30 UhrDJ: HenningHomepage: www.lautunddeutlich-freiburg.deIn welche Schublade passt Laut &amp; Deutlich? Nun, das ist schwierig. Auf all die Jahre betrachtet. Sollte auch so sein - von Anfang an. Seit 1991.Das Vergangene:Laut &amp; Deutlich mal punkig, mal wave-ig, mal rockig.Dazwischen: Taumel durch bizarre Gefilde des Untergrunds, ermüdet vom musikalischen Normal.Dazu: Buchtips, Konzertberichte, Interviews und Extras.Im Hier und Jetzt:Tummeln in elektronischen Gärten. Nicht in allen, aber in vielen.Mit dem Ohr an der Zeit. Und wenn die Uhr mal langsamer tickt, ist's auch nicht schade - der Blick zurück ohne Reue.Extras erweitern das Spektrum.Die Beispiele können sich hören lassen: Sounds und Assoziationen rund um das Wasser, den Hund, Hörspiel und Musik, Dubsounds - gestern und heute....ZUHÖREN ist gefragt - STAUNEN erlaubt</description>
+      <website>https://rdl.local/sendung/laut-und-deutlich</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="22:00:00" time-to="23:30:00" weekFrequency="2" date-from="2013-10-03T22:00:00+02:00" day="TH"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="34">
+      <title>Musik Spezial</title>
+      <description>Jeden Sonntag 18-20 Uhr</description>
+      <website>https://rdl.local/sendung/musik-spezial</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="18:00:00" time-to="20:00:00" day="SO"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="35">
+      <title>Permanent Waves / Permanent Grooves</title>
+      <description>Sendezeit: Alle 14 Tage sonntags von 20 - 21 UhrDJ: Michael Jung(siehe auch: Meet The Beat)Mit den Permanent Waves durch die 70erBack to the Roots of New Wave - Facts und Platten aus diesem Monat vor genau 40 Jahren.Jeden 2. Sonntag um 20 Uhr.Permanent Grooves / Swingtimedie Funkstunde in Jazz, Boogie und Jive mit den besten Hits aus den zeitgenössischen Charts vor 70 Jahren, angereichert mit vielen selten gehörten O-Tönen aus Kultur und Zeitgeschehen.</description>
+      <website>https://rdl.local/sendung/permanent-waves-permanent-grooves</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="20:00:00" time-to="21:00:00" weekFrequency="2" date-from="2013-10-13T20:00:00+02:00" day="SO"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="36">
+      <title>Rabenton</title>
+      <description>Am 2. Sonntag des Monats von 22-23 UhrModerator: Ozzi, Greyff &amp; RapkaliburMittelalterliche Musik, Folk und Artverwandtes in allen Facetten !Die mittelalterliche Spielmannskunst lebt in Text und Musik in vielen unterschiedlichen Musikrichtungen weiter. Die Sendung Rabenton stellt die verschiedenen Spielweisen aus den Bereichen: Marktmittelelalter, Wave/Gothik, Metal, Folk u.a. vor. Konzerthinweise und Informationen zu Mittelaltermärkten in der Nähe gibt es natürlich auch.Sendetermine (4-wöchentlich) und Spiellisten, sowie Sendungsauszüge, Bilder und andere interessante Informationen gibt es im weltweiten Netz unter:www.rabenton.de</description>
+      <website>https://rdl.local/sendung/rabenton</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="22:00:00" time-to="23:00:00" day="SO" week1="false" week2="true" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="37">
+      <title>sBASS Radio</title>
+      <description>Sendezeit: 14-tägig Samstag 22-24 UhrsBASS Radio ist die neue Sendung von NETTO aka DJ sBASS auf Radio Dreyeckland.DJ sBASS sorgt für SPACE, SPASS und vor allem für ganz viel BASS, denn Platz ist genug für Bass Music, House, Dubstep, Acid, Miami Bass, Ambient, Electronica und natürlich Deeeeeeeeeep Drum'n'Bass. Dabei wird stehts ein Augenmerk auf Musik gelegt die nicht nur an der Oberfäche kratzt, sondern tief in den Weltraum geht :)www.facebook.com/sBASSismDas UFO steigt alle 2 Wochen von 22 bis 24 Uhr auf Radio Dreyeckland&nbsp;</description>
+      <website>https://rdl.local/sendung/sbass-radio</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="22:00:00" time-to="00:00:00" weekFrequency="2" date-from="2013-10-05T22:00:00+02:00" day="SA"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="38">
+      <title>Sountastic</title>
+      <description>Sendezeit: Alle 4 Wochen freitags von 20-21 UhrSountastic ist der Nachfolger der beliebten Sendung Voice of HipHop.Nach 3 Jahren HipHop haben wir uns entschlossen, das Sendeformat auszubauen und weitere Musikstile ins Studio zu holen. So präsentieren wir euch das Beste aus Idependent Rap/ HipHop, Electro, Breakbeats, und vieles vieles mehr.Zusätzlich erwarten euch Interviews, Artists und deren Musik.Freitags alle 4 Wochen gibts dick was auf die Ohren, schaltet ein.Ihr findet uns auch auf Myspace, wo ihr die letzte Sendung downloaden könnt und natürlich Aktuelles rund um Sountastic und Freiburgs Partyszene erfahrt.www.myspace.com/sountasticAnfragen für Musikwünsche und Gastauftritte bitte an:sountastic@email.com&nbsp;It feels sountastic !!!</description>
+      <website>https://rdl.local/sendung/sountastic</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="20:00:00" time-to="20:00:00" weekFrequency="4" date-from="2013-10-18T20:00:00+02:00" day="FR"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="39">
+      <title>Sprung aus den Wolken</title>
+      <description>Sendezeit: Jeden 2. Samstag von 21 bis 22 UhrDJs: Andi und TimoNostalgisches und Aktuelles aus den Bereichen radikaler, handgemachter Musik/Punk/Post-Punk/charmanter Lärm&nbsp;</description>
+      <website>https://rdl.local/sendung/sprung-aus-den-wolken</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="21:00:00" time-to="22:00:00" weekFrequency="2" date-from="2013-10-12T21:00:00+02:00" day="SA"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="40">
+      <title>Zweite Heimat</title>
+      <description>Sendezeit: jeden Freitag von 15 - 16 UhrDJ: Christian Rath"Zweite Heimat" ist die wöchentliche wortfreie Extraausgabe der Euro-Folk-Sendung "Keine Heimat", die auf RDL jeden Dienstag von 15-16 Uhr läuft.In der Zweiten Heimat werden freitags oft neue CDs vorgestellt, die in keinen der Dienstags-Schwerpunkte passen. Oder es gibt Musik von frisch erworbenen älteren CDs. Oft werden auch die besten Tracks der Dienstags-Sendungen zu einer Zweiten Heimat zusammengestellt.Playlists gibt es auf der Webseite:&nbsp; www.keine-heimat.de&nbsp;&nbsp;</description>
+      <website>https://rdl.local/sendung/zweite-heimat</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="15:00:00" time-to="16:00:00" day="FR"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="41">
+      <title>Interkontinentale Musik</title>
+      <description>Sendezeit: Jeden Mittwoch um 15 UhrSchwerpunkt: Musik aus Asien</description>
+      <website>https://rdl.local/sendung/interkontinentale-musik</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="15:00:00" time-to="16:00:00" day="MI"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="42">
+      <title>Neue Sendung</title>
+      <description>Sendezeit: Alle 14 Tage Samstags um 21 UhrNeue Sendung - anfangs nur ein Arbeitstitel, heute ein hartnäckiger und verwirrender Dauerbrenner - jedenfalls heißt die Neue Sendung schon länger so ... und doch ist jede Sendung eine neue Sendung.</description>
+      <website>https://rdl.local/sendung/neue-sendung</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="21:00:00" time-to="22:00:00" weekFrequency="2" date-from="2013-10-05T21:00:00+02:00" day="SA"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="43">
+      <title>African Roots Music</title>
+      <description>Sendezeit: jeden Sonntag von 14 - 16 UhrDJ: Jon-JonNach einigen Jahren Zwangspause aus gesundheitlichen Gründen ist Jonathan Gangman alias Jon-Jon (übrigens aus Ghana) wieder im Radio zu hören. In seiner Sendung wird traditionelle und moderne Musik des gesamten afrikanischen Kontinents gespielt, von Rai bis Soukous bis Hi-Life, Reggae, Mbalax, Juju, Chimurenga, Township-Jive und Taraab.Die Musik wird von DJ Jon-Jon zusammengestellt und in der Sendung an die ZuhörerInnen, seien sie aus Afrika oder einfach afrikabegeisterte Menschen, gebracht. Damit die Sendung einem möglichst breiten und internationalen Publikum zugänglich ist, wird sie in englisch moderiert."Now then! The show continues unabated with positive vibrations coming to you through the media waves of RDL Freiburg"Das Ziel dieser Sendung ist zum einen, interessierten HörerInnen den afrikanischen Kontinent durch seine Musik und Kultur näherzubringen, vor allem aber auch die AfrikanerInnen, die im Sendegebiet leben, im Geist einer pan-afrikanischen "Brotherhood" und "Sisterhood" zusammenzubringen."Tune in then."Homepage von African Roots Music&nbsp;</description>
+      <website>https://rdl.local/sendung/african-roots-music-0</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="14:00:00" time-to="16:00:00" day="SO"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="44">
+      <title>Midnight BBQ</title>
+      <description>Sizzlin ´Hoz&nbsp; &amp; Soulful funkin´Sendezeit: alle 2 Wochen Montags um 22.30 Uhr&nbsp;</description>
+      <website>https://rdl.local/sendung/midnight-bbq-0</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="22:30:00" time-to="00:00:00" weekFrequency="2" date-from="2013-09-30T22:30:00+02:00" day="MO"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="45">
+      <title>Nachtprogramm</title>
+      <description>Durch die Nacht mit ausgewählten Musiksendungen von RDL.</description>
+      <website>https://rdl.local/sendung/nachtprogramm</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="00:30:00" time-to="09:00:00" day="SA"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="46">
+      <title>Schwule Welle</title>
+      <description>Die Schwule Welle ist seit dem Radio Frühling 1985 on Air19.30 - 21.00 Uhr: Schwule Welle"Donnerstags habe ich nichts an... nur das Radio auf 102,3!"Aktuelles Programm mit Hintergrundinfos:www.schwulewelle.de(Wiederholung: Freitags 13.30 - 15.00 Uhr)&nbsp;&nbsp;&nbsp;</description>
+      <website>https://rdl.local/sendung/schwule-welle</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="19:30:00" time-to="21:00:00" day="TH"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="47">
+      <title>17 Grad - Medien für den Rest</title>
+      <description>Sendezeit: Jeden 3. Montag des Monats um 20 Uhr (Wiederholung: Dienstag 13 Uhr)http://www.17grad.net/&nbsp;</description>
+      <website>https://rdl.local/sendung/17-grad-medien-f%C3%BCr-den-rest</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="20:00:00" time-to="21:00:00" day="MO" week1="false" week2="false" week3="true" week4="false" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="48">
+      <title>Ambossquietschen</title>
+      <description>Jeden 3. Mittwoch im Monat von 20-21 Uhr (Wiederholung am Donnerstag, 13 Uhr)</description>
+      <website>https://rdl.local/sendung/ambossquietschen</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="20:00:00" time-to="21:00:00" day="MI" week1="false" week2="false" week3="true" week4="false" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="49">
+      <title>Das lesewütige Kaffeekränzchen</title>
+      <description>Literatur ist unsere Leidenschaft. Unsere Sendungen widmen wir komplett der Belletristik. Sie bietet uns Blicke auf die Wirklichkeit, die uns die Wirklichkeit verstellt. Konkret sieht das so aus: In jeder einstündigen Sendung stellen wir drei Romane zu wechselnden Themen vor. Dazu sitzen wir im 4er-Team live im Studio und nach den Buchvorstellungen nehmen wir die Romane im Gespräch nochmal unter die Lupe. Uns interessiert, wie Literatur gesellschaftliche Themen umsetzt und was eventuell zwischen den Zeilen zu erfahren ist. Derzeit besteht das Lesekränzchen -Team aus ca. 12 Aktiven. Die meisten von uns sind keine LiteraturwissenschaftlerInnen oder GermanistInnen, sondern Leseratten mit Lebenserfahrung und kritischem Blick auf gesellschaftliche Prozesse. Wir freuen uns über Zuwachs! Bei Interesse meldet euch bei gruppe@rdl.deSendezeit: Jeden 2. Donnerstag im Monat um 16 Uhr (Wiederholung am Freitag um 11 Uhr)</description>
+      <website>https://rdl.local/sendung/das-lesew%C3%BCtige-kaffeekr%C3%A4nzchen</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="16:00:00" time-to="17:00:00" day="TH" week1="false" week2="true" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="50">
+      <title>O-Ton Playback</title>
+      <description>Sendezeit: Jeden 1., 2., 3. und 5. Freitag im Monat um 19 Uhr (Wiederholung: Dienstag um 14 Uhr)In O-Ton Playback kommen Veranstaltungen und Lesungen nahezu unverkürzt zu Gehör. Manchmal sind hier auch Features zu hören.</description>
+      <website>https://rdl.local/sendung/o-ton-playback</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="19:00:00" time-to="20:00:00" day="FR" week1="true" week2="true" week3="false" week4="false" week5="true"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="51">
+      <title>stud.live - Das Studierendenmagazin</title>
+      <description>stud.live beschäftigt sich mit hochschulpolitischen, sowie auch allerlei anderen studentischen Themen in und um Freiburg.stud.live befasst sich mit verschiedensten Themen aus den Hochschulbereichen. Dies umfasst neben aktuellen Ereignissen an den Freiburger Hochschulen und aus der Hochschulpolitik auch das studentische Leben im Allgemeinen und im Speziellen.stud.live ist der Nachfolger von StuDio4Sendezeit: Alle 2 Wochen am Montag um 19 Uhr (Wiederholung: Dienstag 11 Uhr)</description>
+      <website>https://rdl.local/sendung/studlive</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="19:00:00" time-to="20:00:00" weekFrequency="2" date-from="2013-10-14T19:00:00+02:00" day="MO"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="52">
+      <title>burning beds</title>
+      <description>Das Umweltmagazin bei Radio DreyecklandAm 2. Montag des Monats um 20 Uhr (Wiederholung: Dienstag 13 Uhr)</description>
+      <website>https://rdl.local/sendung/burning-beds</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="20:00:00" time-to="21:00:00" day="MO" week1="false" week2="true" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="53">
+      <title>Alicja zaprasza!</title>
+      <description>Sendezeit: Jeden 3. Sonntag des Monats, 16-17 UhrIn polnischer Sprache.Alicja zaprasza! sendete bislang alle 14 Tage am Freitag von 16 bis 17 Uhr (Im Wechsel mit 'Polnische Redaktion')Ab März 2015 gibt es einen neuen Sendeplatz: Immer am 3. Sonntag des Monats um 16 Uhr! ('Freiburg auf Polnisch' am 1. Sonntag des Monats)</description>
+      <website>https://rdl.local/sendung/alicja-zaprasza</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="16:00:00" time-to="17:00:00" day="SO" week1="false" week2="false" week3="true" week4="false" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="54">
+      <title>Balkanorama – die Sendung in Balkansprachen</title>
+      <description>Sendezeit: Am 1.,3. und 5. Sonntag des Monats von 13-14 Uhr (Wiederholung: Montag 14-15 Uhr)Kontakt - Radiomoderatorin Melisa Mustafovic: balkanorama@rdl.deIhr genießt Euren Sonntagsbrunch in aller Gemütlichkeit und aus dem Radio klingen die feuchtfröhlichen Töne, die zum Aufstehen und albern sein auffordern. Eure Kinder schütteln zuerst ungläubig mit dem Kopf und kurz daraufhin trommeln begeistert auf ihren Frühstückstellern und Ihr lasst es zu, weil ein bisschen verrückt sein Spaß macht. Die Balkansendung Balkanorama soll Tür und Tore zu dieser vielseitigen Region öffnen. Die Musik der Balkanländer hebt die Laune, wobei die Sprache und Kultur auch nicht zu kurz kommen – wir wünschen viel Vergnügen, Freiburgi.&nbsp;</description>
+      <website>https://rdl.local/sendung/balkanorama-%E2%80%93-die-sendung-balkansprachen</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="14:00:00" day="SO" week1="true" week2="false" week3="true" week4="false" week5="true"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="55">
+      <title>Espaco Aberto (brasilianisch)</title>
+      <description>um programa brasileiro com notícias do Brasil e da Alemanhae muita músicaaos domingos das 11.00 às 12.00 horasDie brasilianische Sendung mit Nachrichten aus Brasilien und Deutschlandund jeder Menge Musik sonntags von 11 bis 12 UhrAllgemein:Die brasilianische Sendung Espaço Aberto wird wöchentlich sonntags von 11 bis 12 Uhr vormittags auf brasilianischem Portugiesisch und auf Deutsch gesendet. Aufgrund ihrer bikulturellen Struktur richtet sich Espaço Aberto an Brasilianierinnen und Brasilianer, die in Freiburg und Umgebung leben und ebenso an deutschsprachige Hörerinnen und Hörer, die sich für Brasilien interessieren. Alle Sendeinhalte sind auf beiden Sprachen, jedoch wird darauf geachtet, daß diese nicht einfach wortwörtlich von der einen in die anderen Sprache übersetzt, sondern der jeweiligen Gruppe von Hörerinnen und Hörern durch jeweils zusätzliche Informationen und Erläuterungen angepaßt werden. Espaço Aberto ist die einzige brasilianische Sendung im deutschsprachigen Raum, die keine reine Musiksendung ist, sondern eine Informationssendung, deren Schwerpunkte zugleich in der Berichterstattung über Brasilien und der Dynamik wechselseitigen brasilianisch-deutschen Austauschs vor Ort liegen.Zielsetzungen:Grundsätzliches Ziel der brasilianischen Sendung ist die Vermittlung eines multidimensionalen Brasiliens, das über bestehende Stereotypen und die auf diesen fußenden Berichterstattungen der deutschen Medien weit hinausgeht. In erster Linie besteht die Sendung aus Nachrichten über aktuelle Ereignisse in Brasilien aus den Bereichen Politik, Gesellschaft, Wirtschaft, Ökologie und Kultur. In einer kritischen Auseinandersetzung mit diesen neuesten Ereignissen ist Espaço Aberto bemüht, brasilianische und deutschsprachige Hörerinnen und Hörer über aktuelle Entwicklungen in Brasilien auf dem Laufenden zu halten. Zudem werden in Schwerpunktsendungen regelmäßig bestimmte Aspekte der brasilianischen Gesellschaft und Kultur, insbesondere der Musik, unabhängig von ihrem Aktualitätsgrad ausführlich und vertieft dargestellt.Eine weitere Zielsetzung von Espaço Aberto ist die Information über brasilienbezogene Veranstaltungen und Aktivitäten in Freiburg und Umgebung. Zentrales Anliegen der brasilianischen Sendung ist, Hilfestellungen für nicht Deutsch sprechende Brasilianerinnen und Brasilianer anzubieten, sich in ihrem badischen Aufenthaltsort zurechtzufinden und zu orientieren.Zusammenfassend läßt sich die brasilianische Sendung durch ihre Ausrichtung charakterisieren, zur gegenseitigen Annäherung zwischen brasilianischer und deutscher Kultur beizutragen. Diese Begegnung und Auseinandersetzung praktiziert Espaço Aberto aufgrund der Zusammensetzung der Redaktion durch die eigene Redaktionsarbeit. Insbesondere dadurch jedoch, daß in Espaço Aberto Brasilianer und Brasilianerinnen Sendungen nicht nur auf Portugiesisch sondern auch auf Deutsch machen, nehmen sie einen Platz in der Freiburger Öffentlichkeit ein, teilen sich dieser mit und machen sich präsent als hier lebende kulturelle Gruppe. Grundsätzliche Zielsetzung ist folglich, über den internen Austausch und Information innerhalb der regionalen brasilianischen Bevölkerungsgruppe hinaus zu einer kommunikativen und gegenseitigen Integration in der südbadischen Öffentlichkeit zu gelangen.Aktivitäten:Neben der oben dargelegten Aktualisierung der Hörerinnen und Hörer über derzeitige Ereignisse und Tendenzen in Brasilien besteht die Redaktionsarbeit von Espaço Aberto in regelmäßigen Interviews mit hier lebenden Brasilianerinnen und Brasilianern über ihre Aktivitäten und Anliegen, die sie speziell in ihrer deutschen Lebensumwelt entwickeln. Ebenso gehören Interviews mit Deutschen zum Programm, die sich in vielfältiger Weise mit Brasilien beschäftigen. Außerdem ist Espaço Aberto immer bemüht, brasilianische Gäste zu interviewen, die Anteil am öffentlichen Leben in Brasilien haben, die auf Tournee- oder Vortragsreisen oder aus anderen Gründen Deutschland besuchen.In diesem Zusammenhang übt Espaço Aberto die Funktion aus, Veranstaltungen zu Brasilien wie Konzerte, Vorträge, Feste, Filmvorführungen u.a. nicht nur anzukündigen und publik zu machen, sondern zudem Zusatzinformationen dazu zu liefern und diese auch kritisch zu kommentieren. Die Sendung informiert regelmäßig über Veranstaltungen und Aktivitäten von speziell in Freiburg und Umgebung ansässigen Vereinen, Gruppen und Organisationen, die sich mit Brasilien beschäftigen. Auch wird über akademische Veranstaltungen zu Brasilien seitens der Universität berichtet.Espaço Abertos Anliegen, den gegenseitigen brasilianisch-deutschen Austausch auf regionaler Ebene zu fördern, findet auch im Bemühen um einen engen Hörerinnen- und Hörerkontakt mittels des Hörertelefons seinen Ausdruck, das während der Sendungen immer zur Verfügung steht und in Anspruch genommen wird.Espaço Aberto, ein Treffpunkt für BrasilianerInnen, Brasilien-Interessierteoder einfach für Fans brasilianischer Musik.Jede Woche, eine Stunde: Sonntags von 11.00 bis 12.00 Uhr.Kontakt: espaco_aberto_ias@yahoo.de&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</description>
+      <website>https://rdl.local/sendung/espaco-aberto-brasilianisch</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="11:00:00" time-to="12:00:00" day="SO"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="56">
+      <title>la voix du sud (arab. / franz.)</title>
+      <description>Sendezeit: Immer der erste Samstag des Monats 12-13 UhrSendung in arabischer und französischer Sprache.&nbsp;</description>
+      <website>https://rdl.local/sendung/la-voix-du-sud-arab-franz</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="12:00:00" time-to="13:00:00" day="SA" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="57">
+      <title>Portugal em directo</title>
+      <description>Sendezeit: Portugal em directo, jeden Samstag, 15-16 UhrSeit November 2009 gibt es im Anschluss an 'Boa Tarde Portugal' diese Sendung auf Portugiesisch:"Portugal em directo" soll Jugendliche motivieren mehr Radio zu hören und ihr Programm durch Themen- und Musikvorschläge, Ideen und Anregungen selbst mitzugestalten. Zu hören ist ein großes Themen-Spektrum, von Literatur über Kultur, alltäglichen Problemen bis hin zu Musik. Dabei sollen auch Musikgruppen und andere Gruppierungen die Chance bekommen, sich vorzustellen und so auf sich aufmerksam zu machen.Außerdem gibt es Wettbewerbe für Kinder!</description>
+      <website>https://rdl.local/sendung/portugal-em-directo</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="15:00:00" time-to="16:00:00" day="SA"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="58">
+      <title>Pouya (persisch)</title>
+      <description>Sendezeit: jeden Sonntag von 12-13 Uhrرادیو پویا&nbsp; برنامه هفتگی آینه&nbsp;تریبونی آزاد برای دوستداران آزادی و رهایی؛ صدایی برای هم صداییمجموعه ای از برنامه هایی هنری، فرهنگی و اجتماعی، سیاسیهریکشنبه از ساعت ۱۲ظهر روز تا ۱۳ پخش میشود&nbsp;این برنامهگوینده ومجری برنامه: سعید مولاRadio Pouya, das WochenspiegelRadio Pouya, das Wochenspiegel dynamischen Radioprogramm. Ein Forum für Liebhaber der Freiheit. Die Sendung in persischer (und häufig auch deutscher) Sprache setzt sich aktuell mit den Verhältnissen im Iran auseinander.Eine Reihe von Beiträgen zu künstlerischen, kulturellen, sozialen und politischen Belangen der Menschen im Iran.Das Programm wird jeden Sonntag von 12 Uhr mittags bis 13 Uhr ausgestrahlt.&nbsp;&nbsp; &nbsp;Redaktion und Moderation: Said Mola</description>
+      <website>https://rdl.local/sendung/pouya-persisch</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="12:00:00" time-to="13:00:00" day="SO"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="59">
+      <title>Radio Ech (russisch)</title>
+      <description>&nbsp;Sendetermin: Jeden Samstag 13-14 Uhr Das ist die einstündige russische Ausgabe der russischen Redaktion. (Hier geht es zur halbstündigen deutschen Ausgabe am Donnerstag von 19-19:30 Uhr)Radio Ech im Internet: Homepage der Radio Ech - RedaktionDas „Radio Ech“ ist eine unabhängige und nicht-kommerzielle russische Redaktion in Freiburg. Seit über zehn Jahren senden wir eine Stunde pro Woche auf russisch und eine halbe Stunde auf deutsch – aber „im russischen Sinne“ auf 102,3 MH (und jetzt auch im Internet). In dieser Zeit waren im Radio Ech über 20 Menschen verschiedener Herkunft tätig.Wir senden keine Mainstream-Musik. Wir erzählen nicht, wie es ist, in Russland zu leben, und vergleichen es nicht mit dem Leben in Deutschland... Wir erzählen nicht, wie man am schnellsten eine Arbeitsstelle findet oder Geld mit Versicherungen spart. Wir geben keine praktischen Ratschläge, singen keine „Loblieder“... weder für diejenigen, die ein- und auswandern, noch für den Westen...Wir versuchen die Rahmen traditioneller russischer und deutscher Radiosender zu brechen und einen neuen, freien und unkonventionellen Raum für die alternative Berichterstattung zu schaffen.Heute, wie vor zehn Jahren, bleibt das Radio Dreyeckland der einzige Raum, in dem Migranten sich frei, kreativ und vor allem muttersprachlich entfalten können.Heute sind viele von uns auch in anderen Medien und kulturellen Bereichen tätig, wobei die Motivation im RDL zu arbeiten bei uns nur gestiegen ist. Politische Verhältnisse in Russland sind in letzter Zeit problematischer geworden: es gibt immer weniger kritische Medien auf russisch. Deswegen steigt unser Bedarf, alternative Informationen auf russisch und über Russland auf deutsch an unsere Zuhörer in Freiburg und weltweit weiterzugeben und zwar aus anderen Quellen, als den russischen "öffentlichen und offiziellen".Aber auch in unseren Sendungen auf Deutsch haben wir in der letzten Zeit immer mehr Anlässe gesehen, kritisch über Ereignisse in Freiburg und in Deutschland zu berichten: z.B über Polizeiaktionen in Freiburg oder über Wachstum von nationalistischen Stimmungen in Deutschland.Wir präsentieren dabei nicht nur Russland und Deutschland, sondern versuchen einen Blick aus unserer „russischen“ Perspektive auf andere Länder und Kontinente der Erde als eine Welt zu schaffen.Unsere redaktionelle Arbeit beschränkt sich nicht nur auf Sendungsproduktion, sondern wir organisieren Performance und Aktionen: „Katjuscha-Party“, russisch-afrikanischer Reggae-Abend „Puschkin“ oder Performance „Tragen alle Russen Pelzmützen?“ in der Berliner Kultkneipe „Burger“, sowie in der PH Freiburg.Wir führen eine langjährige Zusammenarbeit mit anderen Redaktionen im Rahmen diverser Projekten des RDL und auch mit NGOs in Russland. Wir beschäftigen Praktikanten, meist junge Journalistik-Studenten aus Russland, die hier in Freiburg die Möglichkeit bekommen, die Arbeit eines unanhängigen Radio live zu erleben.&nbsp;</description>
+      <website>https://rdl.local/sendung/radio-ech-russisch</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="13:00:00" time-to="14:00:00" day="SA"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="60">
+      <title>Magazin Romanesc 100%</title>
+      <description>&nbsp;&nbsp;&nbsp;&nbsp;Sendezeit: Jeden Samstag von 18-19 Uhr&nbsp;&nbsp;&nbsp;&nbsp;Citind, mestecand, recitind,analizand si incercand sa conjug actualul titlu al emisunii, am ajuns la concluzia ca nu mi-ar conveni, strict din punct de vedere al melodicitatii bineinteles, sa auzim ca suntem recunoscuti pe strada cu apelative de genul "magazionistii" sau "magazionierii" sau, intr-un scenariu golit de cea mai mica urma de convivialitate: "io-te-i si pe suta-n-sutistii aia!".&nbsp;&nbsp;&nbsp;&nbsp; Nu ma intelegeti gresit. Denumirea emisunii, mostenita de la predecesoara noastra in productii romanesti la RDL, zice bine ce zice. Chiar este o emisiune-magazin, cu de toate: cum intri, un raft pe stanga cu stiri din politica; daca te uiti oleaca mai sus vezi si ceva sport agatat langa oferta de social; prin vitrina se poate observa vremea iar pe umerase facem mereu loc pentru o mondenitate, doua. Sub tejghea nu stim nici noi prea precis ce avem dar scoatem promt si cu fiecare ocazie tot ce ne vine la mana (gura). Pentru buna digestie a exponatelor nu ne zgarcim sa va oferim un cocktail 100% din muzica romaneasca.&nbsp;&nbsp;&nbsp;&nbsp; Pentru a putea achizitiona articolele de mai sus, vizitati magazinul nostru de pe strada&nbsp;Fiecare Sambata din Luna, nr. 18-19.&nbsp;&nbsp;&nbsp;&nbsp; Recomandam ascultarea emisiunii fara acordul parintilor.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cel responsabil:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Silviu (Sanda)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; La peste 1,88m inaltime nu suntem inca siguri daca ne vorbeste de sus sau de vina este faptul ca s-a dezvoltat in capitala. Om cu familie si asezat la casa lui, Silviu a dat semne de potential poet (a se citi rimar) inca din frageda adolescenta.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Acum, la&nbsp;peste 40&nbsp;de ani si trecand prin a doua sa adolescenta, rimele s-au slefuit, discursu-i plin de invataminte si accente grave si niciodata, dar niciodata, n-o sa-l prinzi ca se blocheaza. Asta pentru ca, atunci cand se intampla, va da muzica mai tare sa distraga atentia. Bunatatea lui ingenua si preocuparea sa energica il transforma in principalul contribuabil cu muzica si stiri al emisunii. Fara Silviu cu mainile lui pline de cd-uri am asculta doar 2-3 piese pe emisiune, doua interpretate de el iar una de...&nbsp;</description>
+      <website>https://rdl.local/sendung/magazin-romanesc-100</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="18:00:00" time-to="19:00:00" day="SA"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="61">
+      <title>Raices Nomades (spanisch)</title>
+      <description>Homepage der Redaktion: www.raicesnomades.comSendezeit: Samstags 16-17 UhrWiederholung: Donnerstags 15-16 UhrDas Radioprogramm auf Spanisch von Radio Dreyeckland hat einen neuen Namen: Raíces Nómades, wandernde Wurzeln. Dieser Name ersetzt ab sofort den bisherigen, alten Namen unserer Sendung: Poder Latino. Wandernde Wurzeln ist ein Freiraum und ein Kollektiv, das auf die verschiedenen Kämpfe und sozialen und kulturellen Auseinandersetzungen in Lateinamerika blickt und diese seinen HörerInnen näher bringt: durch Interviews, Nachrichten, Debatten oder experimentelle Formate und Rezensionen.&nbsp;Wir sind lateinamerikanische MigrantInnen und wollen uns mit demkulturellen und historischen Erbe unserer Länder auseinander setzen. Dabei geht es uns darum, hinter die offiziellen Versionen der Geschichte zu blicken. Wir laden unsere HörerInnen dazu ein, dies mit uns zu tun, uns zu begleiten und unsere Sendungen zu kommentieren – oder mitzumachen.Wandernde Wurzeln ist für uns Ausdruck und Einladung zugleich, mobil zu bleiben: Wurzeln zu schlagen, aber immer auch in Bewegung zu bleiben, um Stigmata, Zuschreibungen und Ungerechtigkeiten zu hinterfragen und freie und autonome Leben zu gestalten.Colectivo Raíces Nómadescolectivoraicesnomades@googlemail.comSitio web del programa: www.raicesnomades.comTransmisión en vivo: sábados de 16 a 17 hs.Repetición: jueves de 15 a 16 hs.El programa de radio en español tiene nuevo nombre. Raíces Nómades sustituye al anterior Poder Latino, recogiendo su experiencia de trabajo de más de 4 años en el ámbito de las radios libres. Raíces Nómades se reconstituye como un espacio colectivo de libre conexión, de experiencias móviles de lucha en formatos diversos: noticias, entrevistas, debates, expresiones artísticas, presentaciones, etc.Desde nuestra condición de inmigrantes latinoamericanos, híbridos y alterados, relanzamos la urgencia de reflexionar sobre nuestro patrimonio cultural e histórico intentando rescatar las vidas y experiencias que hay detrás de las versiones oficiales de la historia. Aquello que el poder ha negado, y sigue negando, para poder constituirse como tal.Contra ello, invitamos a crear nomadismos, llamamos a ser móviles, a no permanecer nunca en el mismo sitio en el que nos intentan fijar, a escapar de los estigmas, las clasificaciones y las injusticias, a construir nuestras propias pertenencias de manera libre y autónoma.Colectivo Raíces Nómadescolectivoraicesnomades@googlemail.com</description>
+      <website>https://rdl.local/sendung/raices-nomades-spanisch</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="16:00:00" time-to="17:00:00" day="SA"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="62">
+      <title/>
+      <description>Sendezeit: Am 2. Mittwoch im Monat um 20 Uhr (Wiederholung: Donnerstag 13 Uhr)Comedy &amp; Einblicke</description>
+      <website>https://rdl.local/sendung/die-fischer-thompson-show</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="20:00:00" time-to="21:00:00" day="MI" week1="false" week2="true" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="63">
+      <title>IAS-Spezial</title>
+      <description>Mehrsprachiges Special der nicht-deutschsprachigen Redaktionen von RDL. Immer am ersten Samstag des Monats um 17 Uhr.</description>
+      <website>https://rdl.local/sendung/ias-spezial</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="12:00:00" time-to="13:00:00" day="SA" week1="false" week2="false" week3="false" week4="true" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="64">
+      <title>Radio Bleiberecht</title>
+      <description>Sendezeit: Jeden 3. Dienstag des Monats von 19-20 Uhr (Wiederholung am Mittwoch von 11-12 Uhr)Das monatliche Magazin gegen jegliche Staaten und Grenzen. Radio Bleiberecht gibt aktuelle und generelle Infos zu Flüchtlingspolitik in Deutschland und weltweit. Außerdem gibt’s Berichte zu aktuellen Kampagnen, Demos und Aktionen zum Thema Bleiberecht in Freiburg und überall. Denn: Freedom of movement is everybody’s right, we are here and we will fight!&nbsp;</description>
+      <website>https://rdl.local/sendung/radio-bleiberecht</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="19:00:00" time-to="20:00:00" day="DI" week1="false" week2="false" week3="true" week4="false" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="65">
+      <title>Democracy Now (US-Magazin)</title>
+      <description>Nachrichten- und Interviewmagazin aus den USA (englisch)Von Dienstag bis Samstag zwischen 7 und 8 Uhr morgens und jeden Donnerstag um 14 UhrDemocracy Now wurde 1996 von Journalisten um Amy Goodman und Juan González gegründet. Goodman ist auch die Hauptmoderatorin der Sendung. Das Magazin ist politisch unabhängig und finanziert sich über Spenden. &nbsp;Im Jahr 2008 wurde Amy Goodman als erste Journalistin mit dem Right Livelihood Award, dem „Alternativen Nobelpreis“, ausgezeichnet.Democracy Now!'s War and Peace Report provides the audience with access to peopleand perspectives rarely heard in the U.S.corporate-sponsored media, including independent and international journalists, ordinary people from around the world who are directly affected by U.S. foreign policy, grassroots leaders and peace activists, artists, academics and independent analysts. In addition, the War and Peace Report hosts real debates - debates between people who substantially disagree, such as between the White House or the Pentagon spokespeople on the one hand, and grassroots activists on the other.http://www.democracynow.org/</description>
+      <website>https://rdl.local/sendung/democracy-now-us-magazin</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="07:00:00" time-to="08:00:00" day="DI"/>
+          <weekly priority="0" time-from="07:00:00" time-to="08:00:00" day="MI"/>
+          <weekly priority="0" time-from="07:00:00" time-to="08:00:00" day="TH"/>
+          <weekly priority="0" time-from="07:00:00" time-to="08:00:00" day="FR"/>
+          <weekly priority="0" time-from="07:00:00" time-to="08:00:00" day="SA"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="66">
+      <title>'VielFalter'  - Magazin gegen Monokultur und für Inklusion</title>
+      <description>Good bye 'Koo Koo' - Willkommen 'VielFalter'&nbsp; - Magazin gegen Monokultur und für Inklusion!&nbsp; Ab Juli 2015 erweitern wir unser Themenspektrum. Ausgrenzung, Gewalt und Menschenrechtsverletzungen finden nicht nur in der Psychiatrie statt. Der Druck zur Konformität nimmt allerorten zu. Wir beschäftigen uns weiterhin mit Sinn und Unsinn von Diagnosen, mit Krankheitsbildern und biologistischer Weltsicht, mit Erfahrungen, Wünschen,&nbsp; Utopien...&nbsp; Wir widersetzen uns der irrsinnigen Normalität und stellen Fragen: Was tut uns gut? Wie wollen wir die Welt? Was wollen wir ändern?&nbsp; Beteiligt Euch! Schickt Eure Fragen, Erfahrungsberichte, Anregungen an: zwischendenwelten-ät-web.de oder an: VielFalter im Gruppenradio, c/o RadioDreyeckland, Adlerstr. 12, 79098 FreiburgSendezeit: jeden 4. und 5. Donnerstag im Monat von 16-17 Uhr (Wiederholung am 1. Montag im Monat 20 Uhr)</description>
+      <website>https://rdl.local/sendung/koo-koo-sendung-gegen-zwangspsychiatrie</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="16:00:00" time-to="17:00:00" day="TH" week1="false" week2="false" week3="false" week4="true" week5="true"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="67">
+      <title>Historische Linke Presseschau</title>
+      <description/>
+      <website>https://rdl.local/sendung/historische-linke-presseschau</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="11:00:00" time-to="12:00:00" day="FR" week1="false" week2="false" week3="true" week4="true" week5="true"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="68">
+      <title>Magical Mystery Mix</title>
+      <description>Sendezeit: jeden ersten, dritten (und fünften) Dienstag von 22 - 23 UhrDJ: Kurt ManinoukDer Magical Mystery Mix oder "Kino für's Ohr"Der Magical Mystery Mix, seit rund 28 Jahren jeden ersten und dritten (und manchmal fünften) Dienstag im Monat von 22 - 23 Uhr auf Sendung, beschäftigt sich mit mit Geräusch und Text in all seinen vielfältigen Ausprägungen. Gemäß dem Motto "Kino für's Ohr" werden Hörspiele oder andere interessante Soundfragmente mit geeigneter Musik und Geräuschen gemixt, wobei einerseits auf das umfangreiche Weltkultursounderbe zurückgegriffen wird, aber auch eigene Produktionen zu Gehör gebracht werden (und das ist nicht immer was für empfindliche Ohren!). Manchmal gibt es themenzentrierte Sendungen zu ausgewählten Künstlern (Satie, Björk ...), manchmal einfach Soundscapes auch ohne Moderation. Legendär ist der Maienmix (jeden ersten Dienstag im Mai, seit 2000), ein Mix aus erotischen Texten und passender Musik, unter tatkräftiger Unterstützung durch Freund Bdolf. Lasst euch überraschen!Infos unter www.mmmx.de; Rückmeldung ist immer willkommen!Die jeweiligen Themen der Sendungen erfährt man unter www.mmmx.de</description>
+      <website>https://rdl.local/sendung/magical-mystery-mix</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="22:00:00" time-to="23:00:00" day="DI" week1="true" week2="false" week3="true" week4="false" week5="true"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="69">
+      <title>Esperanto Magazin'  </title>
+      <description>Sendezeit:Montags 2./4./5. im Monat 16-17 UhrSamstags 2./4./5. im Monat 17-18 UhrprezentadoDie Internationale Sprache Esperanto wurde vor über 125 Jahren geschaffen um die Verständigung von Menschen verschiedener Muttersprachen zu erleichtern. Damit ist Esperanto eine sogenannte Plansprache. 1887 gestartet durch die Initiative des jüdischen Augenarztes Ludwig Lazarus Zamenhof, hat sich das Sprachprojekt heute zu einer lebendigen Kulturgemeinschaft entwickelt.Esperanto ist bunt, wie die Menschen, die Esperanto sprechen und nutzen. Esperanto-Sprechende haben eine Idee, oder besser viele... und diese bringen wir zu Gehör. Hauptströme gibt es, - ja - , jedoch auch eine Menge Nebenströmungen mit eigenen Gedanken zu Politik, Kultur, Leben, Musik. Das Esperanto-Magazin' greift diese Ideen und Projekte auf, begleitet sie freundlich, wenngleich auch mit kritischer Distanz zu den großen, offiziellen, etablierten Esperanto-Verbänden, und führt ein deutschsprachiges Publikum durch esperantujo (Esperantoland).Kontakt zum Redakteur: Konrad, Tel. 07633 - 802518Nachhören der gesendete Beiträge auf Anfrage: haus25(ät)gmx.net***Esperanto-Magazin'&nbsp; estas plejparte en germana lingvo, sed pli kaj pli mi ankaŭ enmiksas Esperanton. Se vi volas kontakti min uzu la studiotelefonon: xx49-(0)-761 - 31028 aŭ skribu al haus25(ät)gmx.net</description>
+      <website>https://rdl.local/sendung/esperanto-magazino-0</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="16:00:00" time-to="17:00:00" day="MO" week1="false" week2="true" week3="false" week4="true" week5="true"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="70">
+      <title>Focus International</title>
+      <description>Alle 2 Wochen am Donnerstag von 18.30-19 Uhr (im Wechsel mit onda-info). Wiederholung am Freitag um 10.30 Uhr.</description>
+      <website>https://rdl.local/sendung/focus-international</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="18:30:00" time-to="19:00:00" weekFrequency="2" date-from="2014-07-09T18:30:00+02:00" day="TH"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="71">
+      <title>Restrisiko</title>
+      <description>Sendezeit: Jeden 4. Montag des Monats um 20 Uhr (Wiederholung am Dienstag um 13 Uhr)Mit Infos über den anti-nuklearen Widerstand, neueste Entwicklungen in der Atompolitik und -wirtschaft und erneuerbare Energiequellen. Hier wird über die Risiken der Nutzung der Atomkraft sowie Alternativen dazu berichtet. Die Sendenden verstehen sich als Teil der Anti-Atom-Bewegung.Wir legen Wert auf einen hohen Wortanteil, kritische Berichterstattung, Interviews mit Personen, die sonst kaum Zugang zu den Medien haben und machen Sendungen zu Themen, die in der Breite nirgends diskutiert werden.Restrisiko wurde lange von der Anti-Atom-Gruppe Mannheim produziert, mittlerweile liegt die Produktion bei RDL.Im Jahr 2005 erhielt das damals noch Mannheimer Restrisiko-Team für ihre hochwertige journalistische Arbeit ("Tschernobyl-Dokumentationscollage") den Alternativen Medienpreis verliehen.&nbsp;</description>
+      <website>https://rdl.local/sendung/restrisiko</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="20:00:00" time-to="21:00:00" day="MO" week1="false" week2="false" week3="false" week4="true" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="72">
+      <title>Auftakte</title>
+      <description>Ein bunt gewürfeltes Magazin. Die Schnuppersendung bei Radio Dreyeckland für Neu-Einsteiger und Neu-Einsteigerinnen.&nbsp; Einführungsworkshop machen und los gehts.</description>
+      <website>https://rdl.local/sendung/auftakte</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="16:00:00" time-to="17:00:00" day="TH" week1="false" week2="false" week3="true" week4="false" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="73">
+      <title>Station 6</title>
+      <description>Eine Sendeprojekt der Uniklinik Freiburg in Kooperation mit Radio Dreyeckland. Wechselnde Projektteilnehmer gestalten mit Unterstützung einer Ergotherapeutin Magazinsendungen zu unterschiedlichen Themen. Von der Fahrradstadt Freiburg über Musiktherapie bis zum Psychiatriealltag ist alles schon dagewesen. Und was kommt diesmal? Hört rein!</description>
+      <website>https://rdl.local/sendung/station-6</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="16:00:00" time-to="17:00:00" day="DI" week1="false" week2="true" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="74">
+      <title>Linker Medienspiegel</title>
+      <description>Sendezeit: Jeden 4. Dienstag des Monats von 18-19 Uhr (Wiederholung am Mittwoch um 10 Uhr)</description>
+      <website>https://rdl.local/sendung/linker-medienspiegel</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="18:00:00" time-to="19:00:00" day="DI" week1="false" week2="false" week3="false" week4="true" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="75">
+      <title>SpaceFEMfm</title>
+      <description>Feministische Sendung aus Österreich. Immer am 5. Dienstag des Monats um 19 Uhr (Wiederholung am Mittwoch um 11 Uhr)</description>
+      <website>https://rdl.local/sendung/spacefemfm</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="19:00:00" time-to="20:00:00" day="DI" week1="false" week2="false" week3="false" week4="false" week5="true"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="76">
+      <title>Forrózin no ar</title>
+      <description>Immer am 1. Sonntag des Monats von 22 - 0 Uhr</description>
+      <website>https://rdl.local/sendung/forrozin-no-ar</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="22:00:00" time-to="00:00:00" day="SO" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="77">
+      <title>Jazz-Klassik-Blues Night</title>
+      <description>Jeden 3. Sonntag des Monats ab 22 Uhr</description>
+      <website>https://rdl.local/sendung/jazz-klassik-blues-night</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="22:00:00" time-to="03:00:00" day="SO" week1="false" week2="false" week3="true" week4="false" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="78">
+      <title>Radio Ech (deutsch)</title>
+      <description>Sendetermin: Jeden Donnerstag 19-19:30 Uhr (Wiederholung Freitag 13 Uhr)Das ist die halbstündige deutsche Ausgabe der russischen Redaktion. (Hier geht es zur einstündigen russischen Ausgabe am Samstag um 13-14 Uhr)Radio Ech im Internet: Homepage der Radio Ech - RedaktionDas „Radio Ech“ ist eine unabhängige und nicht-kommerzielle russische Redaktion in Freiburg. Seit über zehn Jahren senden wir eine Stunde pro Woche auf russisch und eine halbe Stunde auf deutsch – aber „im russischen Sinne“ auf 102,3 MH (und jetzt auch im Internet). In dieser Zeit waren im Radio Ech über 20 Menschen verschiedener Herkunft tätig.Wir senden keine Mainstream-Musik. Wir erzählen nicht, wie es ist, in Russland zu leben, und vergleichen es nicht mit dem Leben in Deutschland... Wir erzählen nicht, wie man am schnellsten eine Arbeitsstelle findet oder Geld mit Versicherungen spart. Wir geben keine praktischen Ratschläge, singen keine „Loblieder“... weder für diejenigen, die ein- und auswandern, noch für den Westen...Wir versuchen die Rahmen traditioneller russischer und deutscher Radiosender zu brechen und einen neuen, freien und unkonventionellen Raum für die alternative Berichterstattung zu schaffen.Heute, wie vor zehn Jahren, bleibt das Radio Dreyeckland der einzige Raum, in dem Migranten sich frei, kreativ und vor allem muttersprachlich entfalten können.Heute sind viele von uns auch in anderen Medien und kulturellen Bereichen tätig, wobei die Motivation im RDL zu arbeiten bei uns nur gestiegen ist. Politische Verhältnisse in Russland sind in letzter Zeit problematischer geworden: es gibt immer weniger kritische Medien auf russisch. Deswegen steigt unser Bedarf, alternative Informationen auf russisch und über Russland auf deutsch an unsere Zuhörer in Freiburg und weltweit weiterzugeben und zwar aus anderen Quellen, als den russischen "öffentlichen und offiziellen".Aber auch in unseren Sendungen auf Deutsch haben wir in der letzten Zeit immer mehr Anlässe gesehen, kritisch über Ereignisse in Freiburg und in Deutschland zu berichten: z.B über Polizeiaktionen in Freiburg oder über Wachstum von nationalistischen Stimmungen in Deutschland.Wir präsentieren dabei nicht nur Russland und Deutschland, sondern versuchen einen Blick aus unserer „russischen“ Perspektive auf andere Länder und Kontinente der Erde als eine Welt zu schaffen.Unsere redaktionelle Arbeit beschränkt sich nicht nur auf Sendungsproduktion, sondern wir organisieren Performance und Aktionen: „Katjuscha-Party“, russisch-afrikanischer Reggae-Abend „Puschkin“ oder Performance „Tragen alle Russen Pelzmützen?“ in der Berliner Kultkneipe „Burger“, sowie in der PH Freiburg.Wir führen eine langjährige Zusammenarbeit mit anderen Redaktionen im Rahmen diverser Projekten des RDL und auch mit NGOs in Russland. Wir beschäftigen Praktikanten, meist junge Journalistik-Studenten aus Russland, die hier in Freiburg die Möglichkeit bekommen, die Arbeit eines unanhängigen Radio live zu erleben.&nbsp;</description>
+      <website>https://rdl.local/sendung/radio-ech-deutsch</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="19:00:00" time-to="19:30:00" day="TH"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="79">
+      <title>DADLINE</title>
+      <description>Beatz, Rhymez &amp; Cutz !&nbsp; &nbsp;In Hip Hop we trust&nbsp;Samstags alle 4 Wochen ab 22 Uhr&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</description>
+      <website>https://rdl.local/sendung/dadline</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="22:00:00" time-to="00:00:00" weekFrequency="4" date-from="2014-11-08T22:00:00+01:00" day="SA"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="80">
+      <title>B-East Production</title>
+      <description>Sendezeit: Jeden 3. Samstag des Monats 12-13 UhrB-East Production ist media NGO in Berlin. Mit B-East Production können Menschen Medieninhalte gleichzeitig erleben und gestalten.Radio B-East&nbsp; - Einzigartige Geschichten erzählen.Präsentiert in der Sendung werden Geschichten, kulturelle Hintergründe und Musik aus Osteuropäischen Ländern, gestaltet von jungen Migranten aus Europa in Berlin. Die meisten Sendungen beinhalten Diskussionen, Interviews und Reportagen. Es handelt sich um ein zweisprachiges Sendeformat, wobei die Deutsche Moderation von Eugenia Seriakov und die Englische Moderation von Sani Manchak übernommen wird. B-East Productionist Kooperationspartner von RDL.</description>
+      <website>https://rdl.local/sendung/b-east-production</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="12:00:00" time-to="13:00:00" day="SA" week1="false" week2="false" week3="true" week4="false" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="81">
+      <title>+1C@fé</title>
+      <description>+1C@fé&#13;
+... ist ein zweisprachiger Podcast aus Brasilien und Deutschland... es um Podcast bilingue do Brasil e Alemana</description>
+      <website>https://rdl.local/sendung/1cf</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="16:00:00" time-to="17:00:00" day="MI" week1="false" week2="false" week3="true" week4="false" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="82">
+      <title>Radio Fr Greece</title>
+      <description>Radio Fr Greece läuft seit Februar 2015 am ersten und dritten Samstag im Monat um 17 Uhr auf Griechisch.Ich heiße Alexandros Simpas und ich habe mich entschlossen das Radioprogramm zusammen mit meinem Freund Theofanis Kofinas zu machen, da ich seit vielen Jahren in Deutschland lebe und mir hier die griechische Kultur und Musik fehlt. Ich freue mich darauf dies und weiteres mit anderen Leuten zu teilen.</description>
+      <website>https://rdl.local/sendung/radio-fr-greece</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="17:00:00" time-to="18:00:00" day="SA" week1="true" week2="false" week3="true" week4="false" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="83">
+      <title>radio%attac</title>
+      <description>Sendezeit: Jeden 1. Dienstag um 19 Uhr (Wiederholung am Mittwoch um 11 Uhr) und jeden 4. Mittwoch des Monats um 16 UhrMagazin von Radio Attac Österreich zu Themen des ATTAC-Netzwerkes.Wird in Österreich wöchentlich, als halbstündiges Magazin produziert, wir strahlen zwei Magazine hintereinander aus.</description>
+      <website>https://rdl.local/sendung/radioattac-0</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="16:00:00" time-to="17:00:00" day="MI" week1="false" week2="false" week3="false" week4="true" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="84">
+      <title>recht.kritisch</title>
+      <description>Immer am 4. Dienstag des Monats um 19 Uhr. (Wiederholung am Mittwoch 11 Uhr)Eine Magazin- Sendung des Arbeitskreis kritischer Jurist*innen Freiburg. Der akj greift den aktuellen rechtspolitischen Diskurs auf, entwickelt emanzipatorische Positionen und möchte damit den kritischen Umgang mit bestehenden Machtverhältnissen und dem Recht fördern.http://akj-freiburg.de/eine Sendung im Gruppenradio von Radio Dreyeckland</description>
+      <website>https://rdl.local/sendung/rechtkritisch</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="19:00:00" time-to="20:00:00" day="DI" week1="false" week2="false" week3="false" week4="true" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="85">
+      <title>la vie avant tout</title>
+      <description>Alle 14 Tage am Donnerstag 23-24 Uhr. Die neue Musiksendung auf Radio Dreyeckland, die sich einer Musik verschrieben hat, die berührt, begeistert, bewegt.Frei nach dem Zitat von Stig Dagerman "Ce n'est pas le devoir avant tout, mais la vie avant tout." (1) erwartet euch eine Musiksendung, die die Intensität des Lebens feiert. Im zweiwöchigen Wechsel erwarten euch zum Tanzen anregende Indie-Perlen sowie träumerisch, kontemplative Kompositionen. Schwarze und bunte Vinyl-Scheiben werden in der Regel ihr Medium sein.Die zwei Programmlinien haben ihren jeweils eigenen Namen:* danse.avant.tout fürs Tänzerische:Ein Reigen aus Gitarren-Pop, Post-Punk, Indie-Noise, Riot-Girl, Lovely Indie-Rock und vielem, was sonst noch in den Schrank namens "Indie" passt, dort aber keine Schublade mehr gefunden hat. Ganz bewusst ist der "female Indie" darunter stark vertreten.* rêve.avant.tout fürs Träumerische:Dem musikalischen Sturme wird die notwendige Zurückhaltung und Ruhe geschenkt, damit er sich in all seiner schwimmernden Pracht entfalten möge. Mal pathetisch, mal klagend, mal lieblich-säuselnd, ohne Zweifel umgarnend. Stilistisch wandeln wir durch Post-Rock, Kammer-Pop, Folk, Ambient und vieles Weitere.Die Playlists der Sendungen findet ihr in der Regel im diesbezüglichen Beitrag weiter unten. Jede Sendung ist eine Woche nach Ausstrahlung in der Mediathek von RDL abrufbar. Daneben gibt es einzelne Sendungen hier zum Nachhören.Wenn euch Fragen oder Anregungen auf den Lippen liegen, könnt ihr mir gerne schreiben: danse.avant.tout#posteo.deHerzliche Grüße! David--------(1) frei übersetzt: "Nicht die Pflicht, sondern das Leben steht vor allen Dingen." [Aus "Notre besoin de consolation est impossible à rassasier" von Stig Dagerman (1955)]</description>
+      <website>https://rdl.local/sendung/la-vie-avant-tout</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="23:00:00" time-to="00:00:00" weekFrequency="2" date-from="2015-07-02T23:00:00+02:00" day="TH"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="86">
+      <title>Programm nach Ansage (Mi)</title>
+      <description/>
+      <website>https://rdl.local/sendung/programm-nach-ansage-mi</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="20:00:00" time-to="21:00:00" day="MI" week1="false" week2="false" week3="false" week4="true" week5="true"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="87">
+      <title>Dialoge mit Eggie</title>
+      <description>Sendezeit: 4. Sonntag des Monats von 13 - 14 UhrEinmal im Monat werden verschiedene Themen auf mehrere Sprachen, z. B. Englisch, Mandarin, Cantonesisch, Hokkien, Deutsch oder Japanisch, mit Gruppen, Live-Gast, auf der Straßen usw. auf humorvolle Weise diskutiert.&nbsp; Natürlich sind viele interessante Musikstücke auch zu hören.Die Moderatorin ist aus Singapur, das multikulturelle Land Südostasiens, das im August 2015 erst 50 wurde. Wie versuchte die Bevölkerung ihre Identität zu finden, was passiert bei den nächsten Wahlen, welche gesellschaftliche und kulturelle Erreignisse gibt es dort zurzeit, wie hat sich die Musikszene entwickelt, - das alles hört ihr in der Sendung.&nbsp;</description>
+      <website>https://rdl.local/sendung/dialoge-mit-eggie</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="14:00:00" day="SO" week1="false" week2="false" week3="false" week4="true" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="88">
+      <title>Incubus Succubus (extended)</title>
+      <description>Jeden Mittwoch um 22 UhrNeu ab November 2015: Alle 2 Wochen eine halbe Stunde länger bis 23:30 Uhr!</description>
+      <website>https://rdl.local/sendung/incubus-succubus-extended</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="22:00:00" time-to="23:30:00" weekFrequency="2" date-from="2015-11-04T22:00:00+01:00" day="MI"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="89">
+      <title>musiVersity</title>
+      <description>The Musical Diversity of Europe - Die musikalische und sprachliche Vielfalt Europasmit Texten in, den Künstler*Innen vertrauten Sprachen WebsitePlaylists: Die Playlists auf der musiVersity-Domain sind Listen der gesendeten Titel. Sie bieten in übersichtlicher Weise Detailinformationen zu den Titeln und erlauben eine Suche mit "[Strg]+f" durch alle Sendungen. Die Seite enthält zudem eine Information über kommende Sendetermine mit Themenvorschau.Nachhören:Die Sendungen von "musiVersity" sind nach Ausstrahlung für jeweils 7 Tage nachzuhören. Der Upload erfolgt meist bis Samstag-Mittag.Liedtexte: Liedtexte und deren Übersetzungen ins Deutsche einiger, gesendeter Titel.Empfehlungen:Auf der Website zur Sendereihe findet Ihr Empfehlungen der Redaktion. Eure sind per Email wilkommen.Die Sendezeit auf RDL ist donnerstags um 22 Uhr in jeder geraden Kalenderwoche. Moderation &amp; Redaktion übernimmt üblicherweise Selmo.Kontakt:radio@soundof.euNur während Live-Sendungen auf RDL:Tel. 0761 / 31 0 28Kommentare und DiskussionDie Seite ermöglicht Euch Diskussionen und Kommentieren der musiVersity-Sendungen.SendungskonzeptDie Sendereihe musiVersity ist ein Fenster in die Vielfalt der Musikstile, Sprachen und Kulturen, die der europäische Kontinent bietet. Jede Sendung hat einen geographischen oder thematischen Schwerpunkt.Der Geist der Sendung ist:Sprachliche und kulturelle Kompetenz: Der Liedtext ist in einer Sprache eines europäischen Kulturraums, mit dessen Sprache der/die Interpret*In mindestens ein Lebensjahr gelebt hat.Politisch und menschlich einwandfrei: Die Redaktion bemüht sich sicherzustellen, dass die gespielten Titel mit dem RDL-Redaktionsstatut konform sind (d.h. keine nationalistisch, sexistisch, militaristisch, rassistisch, klerikal, kapitalistisch oder imperialistisch motivierten Texte)</description>
+      <website>https://rdl.local/sendung/musiversity</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekly priority="0" time-from="22:00:00" time-to="23:00:00" weekFrequency="2" date-from="2016-01-14T22:00:00+01:00" day="TH"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="90">
+      <title>Metal-Demenz-Aeon (Sonntagsausgabe)</title>
+      <description>Sendezeit: jeden zweiten Mittwoch von 23 - open endund am 4. Sonntag im Monat von 22-23 Uhr&nbsp;DJ's: Al d'Berzerk, Ozzi, Niki, Hubert &amp; SturmMetal und Artverwandtes in allen Facetten !Metal ist eine Musikrichtung, die nicht mehr nur heavy ist,sondern vielmehr ein riesiges Spektrum an facettenreichen Klängen bietet.Es ist daher das Anliegen von METAL-DEMENZ-AEON,den kompletten Bereich des Heavy Metal mitsamt den Grenzgebieten (Metal in Verbindung mit z.B. Folk, Jazz etc.) abzudecken bzw. den HörerInnen zugänglich zu machen. D.h. wir senden von z.B. RAMMSTEIN über RUNNING WILD bis hin zu DEAD INFECTION so ziemlich alles, was in irgendeiner Form mit Heavy Metal zu tun hat. Der Inhalt umfasst weiterhin: Neuvorstellungen, Verlosungen, Band-Specials, Interviews, Demos von Underground-Bands, Verriss-Ecken etc.Playlists, Links und mehr: www.metaldemenzaeon.de</description>
+      <website>https://rdl.local/sendung/metal-demenz-aeon-sonntagsausgabe</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="22:00:00" time-to="23:00:00" day="SO" week1="false" week2="false" week3="false" week4="true" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="91">
+      <title>Programm nach Ansage (Dienstag)</title>
+      <description>Alle 2 Monate im Wechsel mit Recht:Kritisch dienstags um 19 Uhr</description>
+      <website>https://rdl.local/sendung/programm-nach-ansage-dienstag</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="19:00:00" time-to="20:00:00" day="DI" week1="false" week2="false" week3="false" week4="true" week5="false"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+    <broadcast id="92">
+      <title>Programm nach Ansage (Samstag)</title>
+      <description>Immer am 5. Samstag des Monats um 12 uhr.</description>
+      <website>https://rdl.local/sendung/programm-nach-ansage-samstag</website>
+      <transmit-times>
+        <transmit-time recurrence="true">
+          <weekOfMonth priority="0" time-from="12:00:00" time-to="13:00:00" day="SA" week1="false" week2="false" week3="false" week4="false" week5="true"/>
+        </transmit-time>
+        <transmit-time recurrence="true" rerun="true">
+          <weekOfMonth priority="0" time-from="13:00:00" time-to="13:00:00" day="TH" week1="true" week2="false" week3="false" week4="false" week5="false"/>
+        </transmit-time>
+      </transmit-times>
+    </broadcast>
+  </programme>
+</station>
