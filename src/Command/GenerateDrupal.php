@@ -8,7 +8,6 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Dotenv\Dotenv
 
 class GenerateDrupal extends Command
 {
@@ -44,7 +43,10 @@ class GenerateDrupal extends Command
 
         $path = getenv('DRUPAL_ROOT');
         $url = getenv('DRUPAL_URL');
-        $save_path = getenv('SAVE_PATH') || 'data/rdl.xml';
+        $save_path = getenv('SAVE_PATH');
+        if (empty($save_path)) {
+            $save_path = 'data/rdl.xml';
+        }
         $adapter = new DrupalAdapter($path, $url);
         $limit = $input->getOption('limit');
         $offset = 0;
@@ -90,7 +92,7 @@ class GenerateDrupal extends Command
         }
         $doc->formatOutput = TRUE;
         $xml = $doc->saveXML();
-        file_put_contents('rdl.xml', $xml);
+        file_put_contents($save_path, $xml);
     }
 
     public function el($name, $val = NULL, $attrs = [])
