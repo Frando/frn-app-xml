@@ -29,9 +29,6 @@ class DrupalAdapterFreeFM extends DrupalAdapter
 //            $show->feed_url = url('node/' . $node->nid . '/feed', $this->urlOpts);
             $body = $node->body['und'][0];
             $body_text = !empty($body['summary']) ? $body['summary'] : $body['value'];
-            if (empty($body_text)) {
-                $body_text = "";
-            }
             $show->body = $this->formatString($body_text);
             $show->airtime = $this->getAirtime($node);
             $shows[] = $show;
@@ -92,8 +89,8 @@ class DrupalAdapterFreeFM extends DrupalAdapter
         }
         else if (!empty($airobj->params)) {
             $airobj->type = 'unsupported';
-            dump("unsupported params found for show " . $this->currentId);
-            dump($airobj->params);
+//            dump("unsupported params found for show " . $this->currentId);
+//            dump($airobj->params);
         }
 
         return $airobj;

@@ -28,15 +28,21 @@ class DrupalAdapter
     }
 
     public function formatString($string) {
+        // Strip tags (all but line changes);
         $string = strip_tags($string,  '<br><br/><p>');
-        $string = str_replace('&nbsp;', ' ', $string);
+        // Convert <p> and <br> to newlines.
         $string = str_replace('</p>', '', $string);
         $string = preg_replace('/<p[^>]*>/', "\n", $string);
         $string = preg_replace('/<br[^>]*>/', "\n", $string);
-//            $string = drupal_html_to_text($string, ['b', 'p']);
+        // Remove double spaces.
+        $string = str_replace('&nbsp;', ' ', $string);
         $string = preg_replace('/ +/', ' ', $string);
+        // Remove anything in double square brackets.
         $string = preg_replace('/\[\[.*?\]\]/ms', '', $string);
+        // Remove double newlines.
         $string = preg_replace("/\n(\s*\n)+/", "\n", $string);
+        // Encode entities.
+        $string = htmlentities($string, ENT_COMPAT | ENT_XML1, 'UTF-8', FALSE);
         return $string;
     }
 

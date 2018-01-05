@@ -15,7 +15,7 @@ class XmlCreatorFreeFM extends XmlCreatorBase {
         $studio->appendChild($this->el('zip', '89073'));
         $loc = $studio->appendChild($this->el('studio-location'));
         $gml = $loc->appendChild($this->el('gml:Point'));
-        $gml->appendChild($this->el('gml:pos', '47.993157 7.840236'));
+        $gml->appendChild($this->el('gml:pos', '48.4005863 9.9910884'));
         $studio->appendChild($this->el('phone', '+49 731 93862 84', ['type' => 'studio']));
         $studio->appendChild($this->el('phone', '+49 731 93862 99', ['type' => 'office']));
         $studio->appendChild($this->el('email', 'info@freefm.de', ['type' => 'office']));
@@ -32,7 +32,7 @@ class XmlCreatorFreeFM extends XmlCreatorBase {
             ->appendChild($this->el('daily', NULL, ['time-from' => '00:00:00', 'time-to' => '23:59:59']));
         $channel[0]->appendChild($this->el('transmit-location'))
             ->appendChild($this->el('gml:Point'))
-            ->appendChild($this->el('gml:pos', '48.08081 7.66913'));
+            ->appendChild($this->el('gml:pos', '48.3903404 9.8956938'));
 
         $channel[1] = $el->appendChild($this->el('transmitter', NULL, ['type' => 'cable']));
         $channel[1]->appendChild($this->el('frequency', '97.7'));

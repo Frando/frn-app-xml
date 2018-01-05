@@ -13,8 +13,8 @@ class Validate extends Command
     protected function configure()
     {
         $this
-            ->setName('validate')
-            ->setDescription('Validate against XSD')
+            ->setName('xml:validate')
+            ->setDescription('Validate XML against XSD')
             ->setHelp('Todo')
             ->addArgument('schema', InputArgument::REQUIRED, 'Schema to validate against')
             ->addArgument('xml', InputArgument::REQUIRED, 'XML file');
