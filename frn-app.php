@@ -11,7 +11,9 @@ use FRNApp\Rdl\RdlCommand;
 use FRNApp\FreeFm\FreeFMCommand;
 
 $dotenv = new Dotenv();
-$dotenv->load(__DIR__ . '/.env');
+if (file_exists(__DIR__ . '/.env')) {
+    $dotenv->load(__DIR__ . '/.env');
+}
 
 $application = new Application();
 
