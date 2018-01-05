@@ -91,7 +91,7 @@ class RdlXmlCreator extends XmlCreatorBase
         return $el;
     }
 
-    public function getBroadcasts($id, $show)
+    public function getBroadcast($id, $show)
     {
         $rrule = $this->parseRruleFromDrupal($show);
         $now = new \DateTime();
@@ -123,7 +123,7 @@ class RdlXmlCreator extends XmlCreatorBase
         return $times;
     }
 
-    protected function generateTimeRow($rule, $show, $rerun = FALSE)
+    protected function generateTimeRow($rule, $show)
     {
         $time = $this->el('transmit-time', NULL, ['recurrence' => 'true']);
 

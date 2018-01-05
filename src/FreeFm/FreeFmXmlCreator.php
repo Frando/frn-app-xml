@@ -63,9 +63,9 @@ class FreeFmXmlCreator extends XmlCreatorBase {
         return $el;
     }
 
-    public function getBroadcasts($id, $show)
+    public function getBroadcast($id, $show)
     {
-        $broadcast = parent::getBroadcasts($id, $show);
+        $broadcast = parent::getBroadcast($id, $show);
         $broadcast->appendChild($this->el('title', $show->title));
         $broadcast->appendChild($this->el('description', $show->body));
         $broadcast->appendChild($this->el('website', $show->url));

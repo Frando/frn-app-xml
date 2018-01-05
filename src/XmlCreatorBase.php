@@ -87,16 +87,16 @@ abstract class XmlCreatorBase implements XmlCreatorInterface
         $this->shows = $this->adapter->getBroadcasts($this->idLimit);
         $id = 1;
         foreach ($this->shows as $show) {
-            $broadcast = $this->getBroadcasts($id, $show);
+            $broadcast = $this->getBroadcast($id, $show);
             if (!empty($broadcast)) {
-                $this->programme->appendChild($this->getBroadcasts($id, $show));
+                $this->programme->appendChild($broadcast);
                 $id++;
             }
         }
         return $doc;
     }
 
-    public function getBroadcasts($id, $info) {
+    public function getBroadcast($id, $info) {
         $broadcast = $this->el('broadcast', NULL, ['id' => $id]);
         return $broadcast;
     }

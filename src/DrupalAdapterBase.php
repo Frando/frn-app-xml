@@ -18,12 +18,6 @@ abstract class DrupalAdapterBase implements AdapterInterface
         $this->bootDrupal();
     }
 
-    /**
-     * Get broadcasted shows.
-     *
-     * @param array|null $ids Array of IDs to limit output. NULL for no limit.
-     * @return array Array of objects containing all broadcast information needed for XML creation.
-     */
     abstract public function getBroadcasts($ids = NULL);
 
     protected function renderBody($row) {

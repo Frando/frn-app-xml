@@ -32,7 +32,7 @@ interface XmlCreatorInterface
      * @param object $info Broadcast object (as returned from the adapter).
      * @return \DOMElement
      */
-    public function getBroadcasts($id, $info);
+    public function getBroadcast($id, $info);
 
     /**
      * @return \DOMElement
