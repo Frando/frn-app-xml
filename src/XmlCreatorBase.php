@@ -38,7 +38,14 @@ abstract class XmlCreatorBase {
 
     public function setIdLimit($ids) {
         if (!is_array($ids)) {
-            $ids = [$ids];
+            if (strpos($ids, ',')) {
+                $ids = explode(',', $ids);
+            }
+            else {
+                $ids = [$ids];
+            }
+            // Convert to ints.
+            $ids = array_filter(array_map(function($id) { return (int) $id; }, $ids), function($id) { return $id; } );
         }
         $this->idLimit = $ids;
     }
@@ -62,7 +69,7 @@ abstract class XmlCreatorBase {
         $this->programme = $doc->createElement('programme');
         $this->station->appendChild($this->programme);
 
-        $this->shows = $this->adapter->getShows(0, 0, $this->idLimit);
+        $this->shows = $this->adapter->getShows($this->idLimit);
         $id = 1;
         foreach ($this->shows as $show) {
             $broadcast = $this->getBroadcast($id, $show);

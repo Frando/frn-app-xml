@@ -13,7 +13,7 @@ class DrupalAdapterRDL extends DrupalAdapter
         parent::__construct($path, $url);
     }
 
-    public function getShows($limit = NULL, $offset = 0, $id = NULL)
+    public function getShows($ids = NULL)
     {
         $shows = [];
 
@@ -37,15 +37,15 @@ class DrupalAdapterRDL extends DrupalAdapter
             AND n.type = 'series'
             AND s.field_series_showtime_rrule IS NOT NULL";
 
-        if (!empty($id)) {
-            $q .= ' AND n.nid = :id ';
+        if (!empty($ids)) {
+            $q .= ' AND n.nid IN(:ids) ';
         }
 
-        if (!empty($limit)) {
-            $q .= "LIMIT $limit OFFSET $offset";
-        }
+//        if (!empty($limit)) {
+//            $q .= "LIMIT $limit OFFSET $offset";
+//        }
 
-        $rows = db_query($q, array(':id' => $id));
+        $rows = db_query($q, array(':ids' => $ids));
 
         foreach ($rows as $row) {
             $show = $this->convertRow($row);

@@ -16,7 +16,7 @@ class DrupalAdapter
         $this->bootDrupal();
     }
 
-    public function getShows($limit = NULL, $offset = 0, $id = NULL)
+    public function getShows($id = NULL)
     {
         $shows = [];
         return $shows;

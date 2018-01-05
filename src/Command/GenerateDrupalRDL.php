@@ -4,21 +4,18 @@ namespace FRNApp\Command;
 
 use FRNApp\DrupalAdapterRDL;
 use FRNApp\XmlCreatorRDL;
-use RRule\RfcParser;
-use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
-use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class GenerateDrupalRDL extends Command
+class GenerateDrupalRDL extends GenerateCommandBase
 {
     protected function configure()
     {
+        // Init base options.
+        parent::configure();
         $this
             ->setName('generate:rdl')
-            ->setDescription('Generate XML from Drupal')
-            ->addOption('id', NULL, InputOption::VALUE_REQUIRED, 'ID limit', 0)
-            ->addOption('limit')
+            ->setDescription('Generate XML from Drupal (RDL)')
             ->setHelp('Todo');
     }
 
@@ -30,18 +27,7 @@ class GenerateDrupalRDL extends Command
         $adapter = new DrupalAdapterRDL($path, $url);
         $xmlCreator = new XmlCreatorRDL($adapter);
 
-        $save_path = getenv('SAVE_PATH');
-        if (empty($save_path)) {
-            $save_path = 'data/rdl.xml';
-        }
-        $xmlCreator->savePath = $save_path;
-
-        $id = $input->getOption('id');
-        if ($id) {
-            $xmlCreator->setIdLimit($id);
-        }
-
-        $xmlCreator->createXml();
+        $this->createXml($input, $output, $xmlCreator);
 
         return;
     }

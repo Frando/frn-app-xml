@@ -13,12 +13,17 @@ class DrupalAdapterFreeFM extends DrupalAdapter
         parent::__construct($path, $url);
     }
 
-    public function getShows($limit = NULL, $offset = 0, $id = NULL)
+    public function getShows($ids = NULL)
     {
         $shows = [];
-        $view_name = 'frontpage_sendungen';
-        $result = views_get_view_result($view_name, 'default');
-        $nids = array_map(function($val) { return $val->nid; }, $result);
+        if (empty($ids)) {
+            $view_name = 'frontpage_sendungen';
+            $result = views_get_view_result($view_name, 'default');
+            $nids = array_map(function($val) { return $val->nid; }, $result);
+        }
+        else {
+            $nids = $ids;
+        }
         $nodes = node_load_multiple($nids);
         foreach ($nodes as $node)  {
             $show = new \stdClass();
