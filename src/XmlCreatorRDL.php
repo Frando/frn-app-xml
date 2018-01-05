@@ -134,8 +134,15 @@ class XmlCreatorRDL extends XmlCreatorBase {
         if ($rule['FREQ'] == 'WEEKLY' || $rule['FREQ'] == 'DAILY') {
             $props = $initProps;
 
-            $days = explode(',', $rule['BYDAY']);
-            $days = $this->translateDays($days);
+            if (!empty($rule['BYDAY'])) {
+              $days = explode(',', $rule['BYDAY']);
+              $days = $this->translateDays($days);
+            }
+            else {
+              $day = $start->format('N') - 1;
+              $map = array_values($this->dayMap());
+              $days = [$map[$day]];
+            }
 
             if ($rule['INTERVAL'] !== "1") {
                 $props['weekFrequency'] = $rule['INTERVAL'];
@@ -187,8 +194,8 @@ class XmlCreatorRDL extends XmlCreatorBase {
 
         return $time;
     }
-    protected function translateDay($day)
-    {
+
+    protected function dayMap() {
         $map = [
             'MO' => 'MO',
             'TU' => 'DI',
@@ -198,6 +205,12 @@ class XmlCreatorRDL extends XmlCreatorBase {
             'SA' => 'SA',
             'SU' => 'SO',
         ];
+        return $map;
+    }
+
+    protected function translateDay($day)
+    {
+        $map = $this->dayMap();
         return $map[$day];
     }
 
