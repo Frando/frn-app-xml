@@ -3,12 +3,14 @@
 namespace FRNApp\Rdl;
 
 use FRNApp\XmlCreatorBase;
-
 use RRule\RfcParser;
 
-class RdlXmlCreator extends XmlCreatorBase {
+class RdlXmlCreator extends XmlCreatorBase
+{
     const RFC_DATE_FORMAT = 'Ymd\THis\Z';
-    public function getInfo() {
+
+    public function getInfo()
+    {
         $el = $this->el('info');
         $el->appendChild($this->el('displayname', 'Radio Dreyeckland'));
         $el->appendChild($this->el('fullname', 'Radio Dreyeckland'));
@@ -30,9 +32,11 @@ class RdlXmlCreator extends XmlCreatorBase {
         $studio->appendChild($this->el('email', 'verwaltung@rdl.de', ['type' => 'office']));
         return $el;
     }
-    public function getMediaChannels() {
+
+    public function getMediaChannels()
+    {
         $el = $this->el('media-channels');
-        $channel[0]= $el->appendChild($this->el('transmitter', NULL, ['type' => 'ukw']));
+        $channel[0] = $el->appendChild($this->el('transmitter', NULL, ['type' => 'ukw']));
         $channel[0]->appendChild($this->el('frequency', '102.3'));
         $channel[0]->appendChild($this->el('city', 'Freiburg'));
         $channel[0]->appendChild($this->el('operator', 'MediaBroadcast'));
@@ -87,7 +91,8 @@ class RdlXmlCreator extends XmlCreatorBase {
         return $el;
     }
 
-    public function getBroadcasts($id, $show) {
+    public function getBroadcasts($id, $show)
+    {
         $rrule = $this->parseRruleFromDrupal($show);
         $now = new \DateTime();
         // Skip past shows.
@@ -106,44 +111,40 @@ class RdlXmlCreator extends XmlCreatorBase {
 
     protected function generateTimes($rule, $show)
     {
-
         $times = $this->el('transmit-times');
         $time = $this->generateTimeRow($rule, $show);
         $times->appendChild($time);
         if (!empty($show->rerun)) {
             $rerunRule = $this->parseRruleFromDrupal($show->rerun);
             $rerunTime = $this->generateTimeRow($rerunRule, $show->rerun);
-            $rerunTime ->setAttribute('rerun', 'true');
+            $rerunTime->setAttribute('rerun', 'true');
             $times->appendChild($rerunTime);
         }
         return $times;
     }
 
-    protected function generateTimeRow($rule, $show, $rerun = FALSE) {
-
+    protected function generateTimeRow($rule, $show, $rerun = FALSE)
+    {
         $time = $this->el('transmit-time', NULL, ['recurrence' => 'true']);
 
         $start = $show->start;
         $end = $show->end;
-
         $initProps = [
             'priority' => 0,
             'time-from' => $start->format('H:i:s'),
             'time-to' => $end->format('H:i:s'),
         ];
 
-
         if ($rule['FREQ'] == 'WEEKLY' || $rule['FREQ'] == 'DAILY') {
             $props = $initProps;
 
             if (!empty($rule['BYDAY'])) {
-              $days = explode(',', $rule['BYDAY']);
-              $days = $this->translateDays($days);
-            }
-            else {
-              $day = $start->format('N') - 1;
-              $map = array_values($this->dayMap());
-              $days = [$map[$day]];
+                $days = explode(',', $rule['BYDAY']);
+                $days = $this->translateDays($days);
+            } else {
+                $day = $start->format('N') - 1;
+                $map = array_values($this->dayMap());
+                $days = [$map[$day]];
             }
 
             if ($rule['INTERVAL'] !== "1") {
@@ -155,8 +156,7 @@ class RdlXmlCreator extends XmlCreatorBase {
                 $weekly = $this->el('weekly', NULL, $props);
                 $time->appendChild($weekly);
             }
-        }
-        else if ($rule['FREQ'] == 'MONTHLY') {
+        } else if ($rule['FREQ'] == 'MONTHLY') {
 
             $daysRaw = explode(',', $rule['BYDAY']);
             $days = [];
@@ -171,9 +171,8 @@ class RdlXmlCreator extends XmlCreatorBase {
                 $day = $this->translateDay($matches[2]);
                 if (!empty($matches[1])) {
                     $days[$day][] = $matches[1];
-                }
-                else {
-                    $days[$day][] = [1,2,3,4,5];
+                } else {
+                    $days[$day][] = [1, 2, 3, 4, 5];
                 }
             }
 
@@ -184,7 +183,7 @@ class RdlXmlCreator extends XmlCreatorBase {
                     $props['week' . $i] = "false";
                 }
                 foreach ($week_nums as $num) {
-                    $num = (int) $num;
+                    $num = (int)$num;
                     if ($num > 0) {
                         $props['week' . $num] = "true";
                     }
@@ -197,7 +196,8 @@ class RdlXmlCreator extends XmlCreatorBase {
         return $time;
     }
 
-    protected function dayMap() {
+    protected function dayMap()
+    {
         $map = [
             'MO' => 'MO',
             'TU' => 'DI',
@@ -258,7 +258,7 @@ class RdlXmlCreator extends XmlCreatorBase {
             $parts['EXCLUDE'] = $exdate;
         }
         if (!empty($rdate)) {
-            $parts['RDATE'] = $exdate;
+            $parts['RDATE'] = $rdate;
         }
         return $parts;
     }

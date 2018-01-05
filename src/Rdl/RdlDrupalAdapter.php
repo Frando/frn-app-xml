@@ -10,6 +10,14 @@ class RdlDrupalAdapter extends DrupalAdapterBase
     protected $url;
     protected $urlOpts;
 
+    protected $field_name;
+    protected $field_info;
+
+    protected $timezone_db;
+    protected $timezone;
+    protected $timezone_object;
+    protected $date_format_db;
+
     public function getBroadcasts($ids = NULL)
     {
         $shows = [];
@@ -17,30 +25,22 @@ class RdlDrupalAdapter extends DrupalAdapterBase
         $this->field_name = 'field_series_showtime';
         $this->field_info = field_info_field($this->field_name);
         $this->timezone_db = date_get_timezone_db($this->field_info['settings']['tz_handling']);
-        $this->db_format = date_type_format($this->field_info['type']);
+        $this->date_format_db = date_type_format($this->field_info['type']);
         $this->timezone = date_get_timezone($this->field_info['settings']['tz_handling'], '');
-        $this->tz = new \DateTimeZone($this->timezone);
+        $this->timezone_object = new \DateTimeZone($this->timezone);
 
         $q = "SELECT * FROM {node} n
           LEFT JOIN {field_data_field_series_showtime} s
-            ON  n.nid = s.entity_id
-            AND s.entity_type = 'node'
-            AND s.delta = 0
+            ON  n.nid = s.entity_id AND s.entity_type = 'node' AND s.delta = 0
           LEFT JOIN {field_data_body} b
-            ON  n.nid = b.entity_id
-            AND s.entity_type = 'node'
-            AND s.delta = 0
+            ON  n.nid = b.entity_id AND s.entity_type = 'node'  AND s.delta = 0
           WHERE n.status = 1
             AND n.type = 'series'
             AND s.field_series_showtime_rrule IS NOT NULL";
 
         if (!empty($ids)) {
-            $q .= ' AND n.nid IN(:ids) ';
+            $q .= ' AND n.nid IN (:ids) ';
         }
-
-//        if (!empty($limit)) {
-//            $q .= "LIMIT $limit OFFSET $offset";
-//        }
 
         $rows = db_query($q, array(':ids' => $ids));
 
@@ -55,16 +55,13 @@ class RdlDrupalAdapter extends DrupalAdapterBase
         return $shows;
     }
 
-    public function getRerun($show) {
+    public function getRerun($show)
+    {
         $q = "SELECT * FROM {node} n
           LEFT JOIN {field_data_field_series_showtime} s
-            ON  n.nid = s.entity_id
-            AND s.entity_type = 'node'
-            AND s.delta = 0
+            ON  n.nid = s.entity_id AND s.entity_type = 'node' AND s.delta = 0
           LEFT JOIN {field_data_field_series} r
-            ON  n.nid = r.entity_id
-            AND r.entity_type = 'node'
-            AND r.delta = 0
+            ON  n.nid = r.entity_id AND r.entity_type = 'node' AND r.delta = 0
           WHERE n.status = 1
             AND n.type = 'series_rerun'
             AND r.field_series_target_id = :target
@@ -77,14 +74,15 @@ class RdlDrupalAdapter extends DrupalAdapterBase
         }
     }
 
-    public function convertRow($row, $rerun = FALSE) {
+    public function convertRow($row, $rerun = FALSE)
+    {
         $show = new \stdClass();
         $show->rrule = $row->field_series_showtime_rrule;
         $show->start = $row->field_series_showtime_value;
         $show->end = $row->field_series_showtime_value2;
         foreach (['start', 'end'] as $key) {
-            $date = new \DateObject($show->{$key}, $this->timezone_db, $this->db_format);
-            date_timezone_set($date, $this->tz);
+            $date = new \DateObject($show->{$key}, $this->timezone_db, $this->date_format_db);
+            date_timezone_set($date, $this->timezone_object);
             $show->{$key} = $date;
         }
 

@@ -10,10 +10,10 @@ abstract class DrupalAdapterBase implements AdapterInterface
     protected $url;
     protected $urlOpts;
 
-    public function __construct($opts)
+    public function __construct($opts = array())
     {
-        $this->path = $opts['path'];
-        $this->url = $opts['url'];
+        $this->path = isset($opts['path']) ? $opts['path'] : '.';
+        $this->url = isset($opts['url']) ? $opts['url'] : 'localhost';
         $this->urlOpts = ['absolute' => TRUE, 'https' => TRUE];
         $this->bootDrupal();
     }

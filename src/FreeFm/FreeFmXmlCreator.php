@@ -52,7 +52,6 @@ class FreeFmXmlCreator extends XmlCreatorBase {
             ->appendChild($this->el('transmit-time', NULL, ['recurrence' => 'true']))
             ->appendChild($this->el('daily', NULL, ['time-from' => '00:00:00', 'time-to' => '23:59:59']));
 
-
         $channel[4] = $el->appendChild($this->el('webstream'));
         $channel[4]->appendChild($this->el('url', 'http://stream.freefm.de:8100/listen.pls'));
         $channel[4]->appendChild($this->el('format', 'audio/mpeg'));
@@ -95,7 +94,6 @@ class FreeFmXmlCreator extends XmlCreatorBase {
             'time-to' => substr($airobj->end, 0, 2) . ':' . substr($airobj->end, 2, 2) . ':00',
             'day' => $airobj->day,
         ];
-
 
         if ($airobj->type === 'week') {
             $name = 'weekly';

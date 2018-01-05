@@ -45,8 +45,7 @@ class FreeFmDrupalAdapter extends DrupalAdapterBase
             return $airtime;
         }
         foreach ($node->field_airtime['und'] as $row) {
-            $airobj = $this->parseAirtime($row['value']);
-            $airtime[] = $airobj;
+            $airtime[] = $this->parseAirtime($row['value']);
         }
         return $airtime;
     }
@@ -91,11 +90,9 @@ class FreeFmDrupalAdapter extends DrupalAdapterBase
         }
         else if (!empty($airobj->params)) {
             $airobj->type = 'unsupported';
-//            dump("unsupported params found for show " . $this->currentId);
-//            dump($airobj->params);
+            dump("unsupported params found for show " . $this->currentId);
+            dump($airobj->params);
         }
-
         return $airobj;
     }
-
 }
