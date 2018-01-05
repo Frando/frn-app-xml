@@ -2,7 +2,7 @@
 
 namespace FRNApp\Command;
 
-use FRNApp\DrupalAdapter;
+use FRNApp\DrupalAdapterBase;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;

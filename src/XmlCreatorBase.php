@@ -2,42 +2,44 @@
 
 namespace FRNApp;
 
-use FRNApp\DrupalAdapter;
+use Symfony\Component\Console\Exception\RuntimeException;
 
-abstract class XmlCreatorBase {
-    /** @var  DrupalAdapter */
-    public $adapter;
-    public $opts;
-    public $idLimit;
-    public $savePath;
+abstract class XmlCreatorBase implements XmlCreatorInterface
+{
+    /** @var AdapterInterface */
+    protected $adapter;
+    protected $opts;
+    protected $idLimit;
 
     /** @var  \DOMDocument */
     public $doc;
 
     /** @var  array */
-    public $shows;
+    protected $shows;
 
     /** @var \DOMElement */
-    public $info;
+    protected $info;
 
     /** @var \DOMElement */
-    public $channels;
+    protected $channels;
 
     /** @var \DOMElement */
-    public $station;
+    protected $station;
 
     /** @var \DOMElement */
-    public $programme;
+    protected $programme;
 
-    public function __construct($adapter, $opts = array()) {
+    public function __construct(AdapterInterface $adapter, $opts = array()) {
         $this->adapter = $adapter;
         $this->opts = $opts;
-        $this->savePath = 'data/frn.xml';
         $this->idLimit = [];
     }
 
     public function setIdLimit($ids) {
-        if (!is_array($ids)) {
+        if (empty($ids)) {
+            return;
+        }
+        else if (!is_array($ids)) {
             if (strpos($ids, ',')) {
                 $ids = explode(',', $ids);
             }
@@ -50,7 +52,20 @@ abstract class XmlCreatorBase {
         $this->idLimit = $ids;
     }
 
+    public function createAndSaveXml($save_path) {
+        $xml = $this->createXml();
+        $ret = file_put_contents($save_path, $xml);
+        return (bool) $ret;
+    }
+
     public function createXml() {
+        $doc = $this->createDomDocument();
+        $doc->formatOutput = TRUE;
+        $xml = $doc->saveXML();
+        return $xml;
+    }
+
+    public function createDomDocument() {
         $doc = new \DOMDocument('1.0', 'UTF-8');
         $this->doc = $doc;
 
@@ -69,21 +84,19 @@ abstract class XmlCreatorBase {
         $this->programme = $doc->createElement('programme');
         $this->station->appendChild($this->programme);
 
-        $this->shows = $this->adapter->getShows($this->idLimit);
+        $this->shows = $this->adapter->getBroadcasts($this->idLimit);
         $id = 1;
         foreach ($this->shows as $show) {
-            $broadcast = $this->getBroadcast($id, $show);
+            $broadcast = $this->getBroadcasts($id, $show);
             if (!empty($broadcast)) {
-                $this->programme->appendChild($this->getBroadcast($id, $show));
+                $this->programme->appendChild($this->getBroadcasts($id, $show));
                 $id++;
             }
         }
-        $doc->formatOutput = TRUE;
-        $xml = $doc->saveXML();
-        file_put_contents($this->savePath, $xml);
+        return $doc;
     }
 
-    public function getBroadcast($id, $info) {
+    public function getBroadcasts($id, $info) {
         $broadcast = $this->el('broadcast', NULL, ['id' => $id]);
         return $broadcast;
     }

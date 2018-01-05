@@ -1,8 +1,10 @@
 <?php
 
-namespace FRNApp;
+namespace FRNApp\FreeFm;
 
-class XmlCreatorFreeFM extends XmlCreatorBase {
+use FRNApp\XmlCreatorBase;
+
+class FreeFmXmlCreator extends XmlCreatorBase {
     public function getInfo() {
         $el = $this->el('info');
         $el->appendChild($this->el('displayname', 'Radio free FM'));
@@ -62,9 +64,9 @@ class XmlCreatorFreeFM extends XmlCreatorBase {
         return $el;
     }
 
-    public function getBroadcast($id, $show)
+    public function getBroadcasts($id, $show)
     {
-        $broadcast = parent::getBroadcast($id, $show);
+        $broadcast = parent::getBroadcasts($id, $show);
         $broadcast->appendChild($this->el('title', $show->title));
         $broadcast->appendChild($this->el('description', $show->body));
         $broadcast->appendChild($this->el('website', $show->url));
@@ -73,7 +75,7 @@ class XmlCreatorFreeFM extends XmlCreatorBase {
         return $broadcast;
     }
 
-    public function generateTimes($show) {
+    protected function generateTimes($show) {
         $times = $this->el('transmit-times');
         if (!empty($show->airtime)) {
             foreach ($show->airtime as $airobj) {
@@ -84,7 +86,7 @@ class XmlCreatorFreeFM extends XmlCreatorBase {
         return $times;
     }
 
-    public function generateTimeRow($airobj) {
+    protected function generateTimeRow($airobj) {
         $time = $this->el('transmit-time', NULL, ['recurrence' => 'true']);
 
         $props = [

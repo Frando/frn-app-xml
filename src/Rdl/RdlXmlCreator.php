@@ -1,10 +1,12 @@
 <?php
 
-namespace FRNApp;
+namespace FRNApp\Rdl;
+
+use FRNApp\XmlCreatorBase;
 
 use RRule\RfcParser;
 
-class XmlCreatorRDL extends XmlCreatorBase {
+class RdlXmlCreator extends XmlCreatorBase {
     const RFC_DATE_FORMAT = 'Ymd\THis\Z';
     public function getInfo() {
         $el = $this->el('info');
@@ -85,7 +87,7 @@ class XmlCreatorRDL extends XmlCreatorBase {
         return $el;
     }
 
-    public function getBroadcast($id, $show) {
+    public function getBroadcasts($id, $show) {
         $rrule = $this->parseRruleFromDrupal($show);
         $now = new \DateTime();
         // Skip past shows.

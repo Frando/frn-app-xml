@@ -1,19 +1,16 @@
 <?php
 
-namespace FRNApp;
+namespace FRNApp\Rdl;
 
-class DrupalAdapterRDL extends DrupalAdapter
+use FRNApp\DrupalAdapterBase;
+
+class RdlDrupalAdapter extends DrupalAdapterBase
 {
     protected $path;
     protected $url;
     protected $urlOpts;
 
-    public function __construct($path, $url)
-    {
-        parent::__construct($path, $url);
-    }
-
-    public function getShows($ids = NULL)
+    public function getBroadcasts($ids = NULL)
     {
         $shows = [];
 

@@ -1,19 +1,16 @@
 <?php
 
-namespace FRNApp;
+namespace FRNApp\FreeFm;
 
-class DrupalAdapterFreeFM extends DrupalAdapter
+use FRNApp\DrupalAdapterBase;
+
+class FreeFmDrupalAdapter extends DrupalAdapterBase
 {
     protected $path;
     protected $url;
     protected $urlOpts;
 
-    public function __construct($path, $url)
-    {
-        parent::__construct($path, $url);
-    }
-
-    public function getShows($ids = NULL)
+    public function getBroadcasts($ids = NULL)
     {
         $shows = [];
         if (empty($ids)) {

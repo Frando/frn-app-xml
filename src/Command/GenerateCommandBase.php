@@ -1,6 +1,7 @@
 <?php
 namespace FRNApp\Command;
 use FRNApp\XmlCreatorBase;
+use FRNApp\XmlCreatorInterface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
@@ -10,29 +11,22 @@ abstract class GenerateCommandBase extends Command {
     protected function configure()
     {
         $this
-            ->addOption('id', NULL, InputOption::VALUE_REQUIRED, 'Only include these show IDs', 0)
-            ->addOption('save-path', NULL, InputOption::VALUE_REQUIRED, 'Save path (default: SAVE_PATH or data/data.xml', 0);
+            ->addOption('id', NULL, InputOption::VALUE_REQUIRED, 'Only include these broadcast IDs', NULL)
+            ->addOption('save-path', NULL, InputOption::VALUE_REQUIRED, 'Save path (default: SAVE_PATH or data/data.xml)', $this->getEnvOrDefault('SAVE_PATH', 'data/data.xml'));
     }
 
-    protected function createXml(InputInterface $input, OutputInterface $output, XmlCreatorBase $xmlCreator) {
-        $save_path = $input->getOption('save-path');
-        if (empty($save_path)) {
-            $save_path = getenv('SAVE_PATH');
+    protected function getEnvOrDefault($name, $default) {
+        $val = getenv($name);
+        if ($val === FALSE)  {
+            $val = $default;
         }
-        if (empty($save_path)) {
-            $save_path = 'data/data.xml';
-        }
-        $xmlCreator->savePath = $save_path;
+        return $val;
+    }
 
-        $id = $input->getOption('id');
-        if ($id) {
-            $xmlCreator->setIdLimit($id);
-        }
-
-        $xmlCreator->createXml();
-
-        return;
-
+    protected function createXml(InputInterface $input, OutputInterface $output, XmlCreatorInterface $xmlCreator) {
+        $xmlCreator->setIdLimit($input->getOption('id'));
+        $xmlCreator->createAndSaveXml($input->getOption('save-path'));
+        $output->writeln("Wrote XML to " . realpath($input->getOption('save-path')));
     }
 
 }
