@@ -202,7 +202,7 @@ class RdlXmlCreator extends XmlCreatorBase
             'MO' => 'MO',
             'TU' => 'DI',
             'WE' => 'MI',
-            'TH' => 'TH',
+            'TH' => 'DO',
             'FR' => 'FR',
             'SA' => 'SA',
             'SU' => 'SO',
