@@ -1,4 +1,4 @@
-# frn-app.php
+# frn-app-xml.php
 
 Create XML for the freie-radios app. Actual data fetching and massaging is highly specific. Currently implementations exist for using the Drupal-based websites of Radio Dreyckland (rdl.de) and Radio FreeFM (freefm.de).
 
@@ -8,7 +8,7 @@ Create XML for the freie-radios app. Actual data fetching and massaging is highl
 
 ### Usage and configuration
 
-    ./frn-app.php generate:rdl
+    ./frn-app-xml.php generate:rdl
     
 Options:
 
@@ -27,3 +27,15 @@ In `.env`
 ### Extension
 
 See `src/Rdl` and `src/FreeFm` for two implementations. Both are Drupal-based. For other PHP based CMS the implementation could look similar (see `DrupalAdapterBase.php`).
+
+The implementation of each backend is three-fold:
+
+1) `Command`: Symfony console command. Extend `GenreateCommandBase.php` and just call `createXml`, passing an `XmlCreator`.
+
+2) `XmlCreator`: A class implementing `XmlCreatorInterface`. Extend `XmlCreatorBase` and implement the stub methods, returning a `\DOMElement` for the different sections of the XML. `getBroadcast` is called for each broadcast returned from the `Adapter` and should return a `\DOMElement` for each.
+
+3) `Adapter`: Return a list of broadcasts (shows) to be included in the XML. All logic and communication towards a specific backend should happen here.
+
+Copying the existing implementations and changing things where required should be the easiest.
+
+Note that commands are not auto-discovered, but have to be registered with the application in `frn-app-xml.php`.

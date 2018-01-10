@@ -1,14 +1,13 @@
 #!/usr/bin/env php
 <?php
 
-require __DIR__.'/vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
+use FRNApp\Command\Validate;
+use FRNApp\FreeFm\FreeFMCommand;
+use FRNApp\Rdl\RdlCommand;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Dotenv\Dotenv;
-use FRNApp\Command\Validate;
-
-use FRNApp\Rdl\RdlCommand;
-use FRNApp\FreeFm\FreeFMCommand;
 
 $dotenv = new Dotenv();
 if (file_exists(__DIR__ . '/.env')) {

@@ -1,5 +1,5 @@
 {
-    "name": "freieradios/frn-app",
+    "name": "freieradios/frn-app-xml",
     "type": "project",
     "authors": [
         {
@@ -7,6 +7,7 @@
             "email": "frando@unbiskant.org"
         }
     ],
+    "bin": ["frn-app-xml.php"],
     "require": {
         "symfony/console": "^3.4",
         "symfony/var-dumper": "^3.4",
