@@ -12,13 +12,13 @@ Create XML for the freie-radios app. Actual data fetching and massaging is highl
     
 Options:
 
-    --id=ID                       Only include these IDs 
-    --save-path=SAVE-PATH         Path to save the XML to
-    -r, --drupal-root=DRUPAL-ROOT Path to Drupal root 
-    -l, --drupal-url=DRUPAL-URL   Drupal base URL
+    --id=ID                 Only include these IDs 
+    --save-path=SAVE-PATH   Path to save the XML to
+    -r, --drupal-root       Path to Drupal root 
+    -l, --drupal-url        Drupal base URL
    
 
-In `.env`
+You can also set these options in `.env`
 
     RDL_DRUPAL_ROOT=/var/www
     RDL_DRUPAL_URL=rdl.de
