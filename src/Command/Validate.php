@@ -46,10 +46,10 @@ class Validate extends Command
             $doc->load($xml);
             $ret = $doc->schemaValidate($schema);
             if ($ret) {
-                $output->writeln('<info>Validated successfully!</info>');
+                $output->writeln('<info>Validation successfull!</info>');
             }
             else {
-                $output->writeln('<error>Errors.</error>');
+                $output->writeln('<error>Validation failed.</error>');
                 $errors = libxml_display_errors();
                 $output->writeln($errors);
             }
@@ -58,11 +58,7 @@ class Validate extends Command
             $output->writeln('Error!');
             dump($e);
         }
-
-
-
     }
-
 }
 
 
@@ -82,10 +78,11 @@ function libxml_display_error($error)
     }
     $return .= '<fg=yellow>';
     $return .= trim($error->message);
-    $return .= '</u>';
+    $return .= '</>';
     $return .= "\n    ";
     if ($error->file) {
-        $return .=    "in $error->file";
+        $file = str_replace(FRNAPP_DIR, '.', $error->file);
+        $return .=    "in $file";
     }
     $return .= " on line $error->line";
 
