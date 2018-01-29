@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.opengis.net/gml" xmlns:gml="http://www.opengis.net/gml">
+  <xs:element name="Polygon">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="gml:exterior"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="exterior">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="gml:LinearRing"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LinearRing">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="gml:posList"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="posList" type="xs:string"/>
+  <xs:element name="Point">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="gml:pos"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pos" type="xs:string"/>
+</xs:schema>

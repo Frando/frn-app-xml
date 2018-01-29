@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:gml="http://www.opengis.net/gml">
+  <xs:import namespace="http://www.opengis.net/gml" schemaLocation="gml.xsd"/>
+  <xs:element name="station">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="info"/>
+        <xs:element ref="media-channels"/>
+        <xs:element ref="programme"/>
+      </xs:sequence>
+      <xs:attribute name="lastupdate" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="info">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element ref="displayname"/>
+        <xs:element ref="fullname"/>
+        <xs:element ref="logo"/>
+        <xs:element ref="basecolor"/>
+        <xs:element ref="city"/>
+        <xs:element ref="description"/>
+        <xs:element ref="studio"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="displayname" type="xs:string"/>
+  <xs:element name="fullname" type="xs:string"/>
+  <xs:element name="logo">
+    <xs:complexType>
+      <xs:attribute name="src" use="required" type="xs:anyURI"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="basecolor" type="xs:string"/>
+  <xs:element name="studio">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element ref="street"/>
+        <xs:element ref="number"/>
+        <xs:element ref="city"/>
+        <xs:element ref="zip"/>
+        <xs:element ref="studio-location"/>
+        <xs:element maxOccurs="unbounded" ref="phone"/>
+        <xs:element maxOccurs="unbounded" ref="email"/>
+        <xs:element ref="open-times"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="street" type="xs:string"/>
+  <xs:element name="number" type="xs:integer"/>
+  <xs:element name="zip" type="xs:integer"/>
+  <xs:element name="studio-location" type="gml.Point"/>
+  <xs:element name="phone">
+    <xs:complexType mixed="true">
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="email">
+    <xs:complexType mixed="true">
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="open-times">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="open-time"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="open-time">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element ref="daily"/>
+        <xs:element ref="weekly"/>
+        <xs:element ref="weekOfMonth"/>
+        <xs:element ref="yearly"/>
+      </xs:choice>
+      <xs:attribute name="recurrence" use="required" type="xs:boolean"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="media-channels">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element maxOccurs="unbounded" ref="transmitter"/>
+        <xs:element maxOccurs="unbounded" ref="webstream"/>
+        <xs:element ref="website"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="transmitter">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="frequency"/>
+        <xs:element ref="city"/>
+        <xs:element ref="operator"/>
+        <xs:element ref="ensemblelabel"/>
+        <xs:element ref="ensemble-ID"/>
+        <xs:element ref="allotment"/>
+        <xs:element ref="kanal"/>
+        <xs:element ref="pid"/>
+        <xs:element ref="kennung-lang"/>
+        <xs:element ref="kennung-kurz"/>
+        <xs:element ref="format"/>
+        <xs:element ref="bitrate"/>
+        <xs:element ref="transmit-power"/>
+        <xs:element ref="transmit-rds-id"/>
+        <xs:element ref="transmitter-location"/>
+        <xs:element ref="receptionarea"/>
+        <xs:element ref="transmit-times"/>
+      </xs:choice>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="frequency" type="xs:decimal"/>
+  <xs:element name="operator" type="xs:string"/>
+  <xs:element name="ensemblelabel" type="xs:string"/>
+  <xs:element name="ensemble-ID" type="xs:NMTOKEN"/>
+  <xs:element name="allotment" type="xs:NCName"/>
+  <xs:element name="kanal" type="xs:NMTOKEN"/>
+  <xs:element name="pid" type="xs:NMTOKEN"/>
+  <xs:element name="kennung-lang" type="xs:NCName"/>
+  <xs:element name="kennung-kurz" type="xs:NCName"/>
+  <xs:element name="transmit-power" type="xs:integer"/>
+  <xs:element name="transmit-rds-id" type="xs:NCName"/>
+  <xs:element name="transmitter-location" type="gml.Point"/>
+  <xs:element name="receptionarea">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="gml:Polygon"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="webstream">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="transmit-times"/>
+        <xs:element ref="url"/>
+        <xs:element ref="format"/>
+        <xs:element ref="bitrate"/>
+        <xs:element ref="quality"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="quality" type="xs:integer"/>
+  <xs:element name="programme">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="broadcast" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="broadcast">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="title"/>
+        <xs:element maxOccurs="unbounded" ref="presenter"/>
+        <xs:element ref="description"/>
+        <xs:element ref="categories"/>
+        <xs:element maxOccurs="unbounded" ref="website"/>
+        <xs:element ref="feed"/>
+        <xs:element ref="transmit-times"/>
+      </xs:choice>
+      <xs:attribute name="id" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="presenter" type="xs:string"/>
+  <xs:element name="categories">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="category"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="category">
+    <xs:complexType>
+      <xs:attribute name="id" use="required" type="xs:integer"/>
+      <xs:attribute name="name" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="feed">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title"/>
+        <xs:element ref="url"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="city" type="xs:string"/>
+  <xs:element name="description" type="xs:string"/>
+  <xs:complexType name="gml.Point">
+    <xs:sequence>
+      <xs:element ref="gml:Point"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="weekly">
+    <xs:complexType>
+      <xs:attribute name="date-from" type="xs:dateTime"/>
+      <xs:attribute name="day" use="required" type="xs:NCName"/>
+      <xs:attribute name="invert" type="xs:boolean"/>
+      <xs:attribute name="oddEvenWeekNbr" type="xs:NCName"/>
+      <xs:attribute name="priority" use="required" type="xs:integer"/>
+      <xs:attribute name="time-from" use="required" type="xs:NMTOKEN"/>
+      <xs:attribute name="time-to" use="required" type="xs:NMTOKEN"/>
+      <xs:attribute name="weekFrequency" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="format" type="xs:string"/>
+  <xs:element name="bitrate" type="xs:integer"/>
+  <xs:element name="transmit-times">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="transmit-time"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="transmit-time">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element ref="daily"/>
+        <xs:element ref="weekly"/>
+        <xs:element ref="weekOfMonth"/>
+        <xs:element ref="yearly"/>
+      </xs:choice>
+      <xs:attribute name="date-from" type="xs:dateTime"/>
+      <xs:attribute name="date-to" type="xs:dateTime"/>
+      <xs:attribute name="recurrence" use="required" type="xs:boolean"/>
+      <xs:attribute name="rerun" type="xs:boolean"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="daily">
+    <xs:complexType>
+      <xs:attribute name="time-from" use="required" type="xs:NMTOKEN"/>
+      <xs:attribute name="time-to" use="required" type="xs:NMTOKEN"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="weekOfMonth">
+    <xs:complexType>
+      <xs:attribute name="date-from" type="xs:dateTime"/>
+      <xs:attribute name="day" use="required" type="xs:NCName"/>
+      <xs:attribute name="firstWeek" type="xs:boolean"/>
+      <xs:attribute name="lastWeek" type="xs:boolean"/>
+      <xs:attribute name="monthFrequency" type="xs:integer"/>
+      <xs:attribute name="oddEvenMonthNbr" type="xs:NCName"/>
+      <xs:attribute name="priority" use="required" type="xs:integer"/>
+      <xs:attribute name="time-from" use="required" type="xs:NMTOKEN"/>
+      <xs:attribute name="time-to" use="required" type="xs:NMTOKEN"/>
+      <xs:attribute name="week1" type="xs:boolean"/>
+      <xs:attribute name="week2" type="xs:boolean"/>
+      <xs:attribute name="week3" type="xs:boolean"/>
+      <xs:attribute name="week4" type="xs:boolean"/>
+      <xs:attribute name="week5" type="xs:boolean"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="yearly">
+    <xs:complexType>
+      <xs:attribute name="day" use="required" type="xs:NCName"/>
+      <xs:attribute name="month" use="required"/>
+      <xs:attribute name="priority" use="required" type="xs:integer"/>
+      <xs:attribute name="time-from" use="required" type="xs:NMTOKEN"/>
+      <xs:attribute name="time-to" use="required" type="xs:NMTOKEN"/>
+      <xs:attribute name="week1" use="required" type="xs:boolean"/>
+      <xs:attribute name="week2" use="required" type="xs:boolean"/>
+      <xs:attribute name="week3" use="required" type="xs:boolean"/>
+      <xs:attribute name="week4" use="required" type="xs:boolean"/>
+      <xs:attribute name="week5" use="required" type="xs:boolean"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="url" type="xs:anyURI"/>
+  <xs:element name="website">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="url"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="title" type="xs:string"/>
+</xs:schema>
