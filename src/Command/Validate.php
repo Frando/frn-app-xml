@@ -6,6 +6,7 @@ use FRNApp\DrupalAdapterBase;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
 class Validate extends Command
@@ -16,15 +17,27 @@ class Validate extends Command
             ->setName('xml:validate')
             ->setDescription('Validate XML against XSD')
             ->setHelp('Todo')
-            ->addArgument('schema', InputArgument::REQUIRED, 'Schema to validate against')
+            ->addOption('schema', NULL, InputOption::VALUE_REQUIRED, 'Set XSD schema to validate against (default: use included schema)', NULL)
             ->addArgument('xml', InputArgument::REQUIRED, 'XML file');
 
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $schema = $input->getArgument('schema');
+        $schema = $input->getOption('schema');
+        if (empty($schema)) {
+            $schema = realpath(FRNAPP_DIR . '/xsd/frn-app-station.xsd');
+        }
         $xml = $input->getArgument('xml');
+
+        if (!file_exists($schema)) {
+            $output->writeln('<error>Schema file ' . $schema . ' not found.</error>');
+            return;
+        }
+        if (!file_exists($xml)) {
+            $output->writeln('<error>XML file ' . $xml . ' not found.</error>');
+            return;
+        }
 
         try {
             libxml_use_internal_errors(true);

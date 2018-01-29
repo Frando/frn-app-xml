@@ -3,6 +3,8 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
+define('FRNAPP_DIR', dirname(__FILE__));
+
 use FRNApp\Command\Validate;
 use FRNApp\FreeFm\FreeFMCommand;
 use FRNApp\Rdl\RdlCommand;
