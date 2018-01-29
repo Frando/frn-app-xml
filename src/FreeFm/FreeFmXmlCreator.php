@@ -35,7 +35,7 @@ class FreeFmXmlCreator extends XmlCreatorBase {
         $channel[0]->appendChild($this->el('transmit-times'))
             ->appendChild($this->el('transmit-time', NULL, ['recurrence' => 'true']))
             ->appendChild($this->el('daily', NULL, ['time-from' => '00:00:00', 'time-to' => '23:59:59']));
-        $channel[0]->appendChild($this->el('transmit-location'))
+        $channel[0]->appendChild($this->el('transmitter-location'))
             ->appendChild($this->el('gml:Point'))
             ->appendChild($this->el('gml:pos', '48.3903404 9.8956938'));
 

@@ -44,7 +44,7 @@ class RdlXmlCreator extends XmlCreatorBase
         $channel[0]->appendChild($this->el('transmit-times'))
             ->appendChild($this->el('transmit-time', NULL, ['recurrence' => 'true']))
             ->appendChild($this->el('daily', NULL, ['time-from' => '00:00:00', 'time-to' => '23:59:59']));
-        $channel[0]->appendChild($this->el('transmit-location'))
+        $channel[0]->appendChild($this->el('transmitter-location'))
             ->appendChild($this->el('gml:Point'))
             ->appendChild($this->el('gml:pos', '48.08081 7.66913'));
 
@@ -105,7 +105,7 @@ class RdlXmlCreator extends XmlCreatorBase
         $broadcast->appendChild($this->el('description', $show->body));
         $broadcast->appendChild($this->el('website', $show->url));
 
-        $categories = $broadcast->appendChild($this->el('categories', $show->url));
+        $categories = $broadcast->appendChild($this->el('categories'));
         if (empty($show->genre)) {
             $categories->appendChild($this->el('category', NULL, ['name' => 'Alternative', 'id' => 1]));
         }
