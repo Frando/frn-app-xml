@@ -104,6 +104,12 @@ class RdlXmlCreator extends XmlCreatorBase
         $broadcast->appendChild($this->el('title', $show->title));
         $broadcast->appendChild($this->el('description', $show->body));
         $broadcast->appendChild($this->el('website', $show->url));
+
+        $categories = $broadcast->appendChild($this->el('categories', $show->url));
+        if (empty($show->genre)) {
+            $categories->appendChild($this->el('category', NULL, ['name' => 'Alternative', 'id' => 1]));
+        }
+
         $times = $this->generateTimes($rrule, $show);
         $broadcast->appendChild($times);
         return $broadcast;

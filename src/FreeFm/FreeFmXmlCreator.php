@@ -10,6 +10,9 @@ class FreeFmXmlCreator extends XmlCreatorBase {
         $el->appendChild($this->el('displayname', 'Radio free FM'));
         $el->appendChild($this->el('fullname', 'Radio free FM gGmbH'));
         $el->appendChild($this->el('city', 'Ulm'));
+        $el->appendChild($this->el('logo', NULL, ['src' =>'https://www.freefm.de/sites/default/files/images/logo_radio-freefm.jpg']));
+        $el->appendChild($this->el('basecolor', '#FF6600'));
+        $el->appendChild($this->el('description', 'Senderbeschreibung FreeFM'));
         $studio = $el->appendChild($this->el('studio'));
         $studio->appendChild($this->el('street', 'Platzgasse'));
         $studio->appendChild($this->el('number', '18'));
@@ -69,8 +72,15 @@ class FreeFmXmlCreator extends XmlCreatorBase {
         $broadcast->appendChild($this->el('title', $show->title));
         $broadcast->appendChild($this->el('description', $show->body));
         $broadcast->appendChild($this->el('website', $show->url));
+
+        $categories = $broadcast->appendChild($this->el('categories'));
+        if (empty($show->genre)) {
+            $categories->appendChild($this->el('category', NULL, ['name' => 'Alternative', 'id' => 1]));
+        }
+
         $times = $this->generateTimes($show);
         $broadcast->appendChild($times);
+
         return $broadcast;
     }
 
