@@ -3,11 +3,11 @@
   <xs:import namespace="http://www.opengis.net/gml" schemaLocation="gml.xsd"/>
   <xs:element name="station">
     <xs:complexType>
-      <xs:sequence>
+      <xs:choice maxOccurs="unbounded">
         <xs:element ref="info"/>
         <xs:element ref="media-channels"/>
         <xs:element ref="programme"/>
-      </xs:sequence>
+      </xs:choice>
       <xs:attribute name="lastupdate" use="required"/>
     </xs:complexType>
   </xs:element>
@@ -108,7 +108,7 @@
         <xs:element ref="receptionarea"/>
         <xs:element ref="transmit-times"/>
       </xs:choice>
-      <xs:attribute name="type" use="required" type="xs:NCName"/>
+      <xs:attribute name="type" use="required" type="xs:string"/>
     </xs:complexType>
   </xs:element>
   <xs:element name="frequency" type="xs:decimal"/>
@@ -121,7 +121,7 @@
   <xs:element name="kennung-lang" type="xs:NCName"/>
   <xs:element name="kennung-kurz" type="xs:NCName"/>
   <xs:element name="transmit-power" type="xs:integer"/>
-  <xs:element name="transmit-rds-id" type="xs:NCName"/>
+  <xs:element name="transmit-rds-id" type="xs:string"/>
   <xs:element name="transmitter-location" type="gml.Point"/>
   <xs:element name="receptionarea">
     <xs:complexType>
